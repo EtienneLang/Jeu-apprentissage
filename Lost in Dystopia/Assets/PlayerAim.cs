@@ -43,11 +43,11 @@ public class PlayerAim : MonoBehaviour
                 timer = 0;
             }
         }
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && canFire)
         {
-            //canFire = false;
+            canFire = false;
             aimAnimator.SetTrigger("Shoot");
-            //Instantiate(bullet, bulletTransform.position, Quaternion.identity);
+            Instantiate(bullet, bulletTransform.position, Quaternion.identity);
         }
     }
     /// <summary>
