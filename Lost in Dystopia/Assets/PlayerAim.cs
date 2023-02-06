@@ -16,6 +16,10 @@ public class PlayerAim : MonoBehaviour
     private float timer;
     public float timeBetweenFiring;
 
+    public float movement_speed = 1f;
+    public Rigidbody2D rb;
+
+    Vector2 movement;
 
 
     private void Awake()
@@ -30,6 +34,13 @@ public class PlayerAim : MonoBehaviour
     {
         HandleAiming();
         HandleShooting();
+        movement.x = Input.GetAxisRaw("Horizontal");
+        movement.y = Input.GetAxisRaw("Vertical");
+    }
+
+    private void FixedUpdate()
+    {
+        rb.MovePosition(rb.position + movement * movement_speed * Time.fixedDeltaTime);
     }
     private void HandleShooting()
     {
