@@ -19,6 +19,8 @@ public class PlayerAim : MonoBehaviour
     public float movement_speed = 1f;
     public Rigidbody2D rb;
 
+    public AudioSource gunSound;
+
     Vector2 movement;
 
 
@@ -57,6 +59,8 @@ public class PlayerAim : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && canFire)
         {
             canFire = false;
+            gunSound.pitch = Random.Range(1.5f, 2.2f);
+            gunSound.Play();
             aimAnimator.SetTrigger("Shoot");
             Instantiate(bullet, bulletTransform.position, Quaternion.identity);
         }
