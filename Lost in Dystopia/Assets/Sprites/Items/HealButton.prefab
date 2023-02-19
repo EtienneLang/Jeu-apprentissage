@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 676353086015895377}
   - component: {fileID: 3247098338012557991}
   - component: {fileID: 1557980316775481034}
+  - component: {fileID: -3863217387369922948}
   m_Layer: 5
   m_Name: HealButton
   m_TagString: Untagged
@@ -121,3 +122,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &-3863217387369922948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2196391516951872482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e33cf5828b58e6b4b88149e1f957e76b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 452338871397030161, guid: af079ab723207ae4f9015690f620f758, type: 3}

@@ -6,6 +6,8 @@ public class Pickup : MonoBehaviour
 {
     private Inventory inventory;
     public GameObject itemButton;
+    public AudioSource sonRamasse;
+    public AudioClip clip;
     void Start()
     {
         inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
@@ -20,6 +22,7 @@ public class Pickup : MonoBehaviour
                 if (inventory.isFull[i] == false)
                 {
                     inventory.isFull[i] = true;
+                    sonRamasse.PlayOneShot(clip);
                     Instantiate(itemButton, inventory.slots[i].transform,false);
                     Destroy(gameObject);
                     break;
