@@ -15,11 +15,12 @@ public class MenuPrincipal : MonoBehaviour
     }
 
 
+    /// <summary>
+    /// Permets de fermer le jeu
+    /// </summary>
     public void FermerJeu() 
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        //Debug.Log("Quitter le jeu");
-        //Application.Quit();
+        Application.Quit();
     }
 
 
