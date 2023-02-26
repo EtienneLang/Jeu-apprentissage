@@ -18,6 +18,11 @@ public class slot : MonoBehaviour
         {
             inventory.isFull[i] = false;
         }
+        else
+        {
+            inventory.isFull[i] = true;
+        }
+
     }
 
     public void DropItem()
