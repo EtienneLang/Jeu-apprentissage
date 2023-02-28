@@ -17,6 +17,7 @@ public class Collectable : Collidable
                 OnCollect();
                 isLooted = true;
                 Debug.Log("Looted");
+
             }
         }
     }
@@ -28,8 +29,11 @@ public class Collectable : Collidable
 
     protected void OnTriggerEnter2D(Collider2D collision)
     {
-        isInRange = true;
-        Debug.Log("player in range");
+        if (collision.name == "Player")
+        {
+            isInRange = true;
+            Debug.Log("player in range");
+        }
     }
 
     protected void OnTriggerExit2D(Collider2D collision)

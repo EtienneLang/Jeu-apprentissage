@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public int goldCoins = 0;
+    public int healtPoints = 100;
+    public Inventory inventory;
     // Start is called before the first frame update
     void Start()
     {

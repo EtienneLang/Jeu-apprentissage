@@ -2,13 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName ="Nouvel item", menuName ="Iventory/Item")]
-public class Item : ScriptableObject
+public class Item : Collectable
 {
 
-    public string Nom;
-    public Sprite Icon;
+    public string nom;
+    public GameObject prefab;
+    public int id;
 
-
+    public virtual void SpawnItem(Vector3 position) 
+    {
+        
+    }
 
 }
