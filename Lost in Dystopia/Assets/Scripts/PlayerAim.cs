@@ -92,7 +92,6 @@ public class PlayerAim : MonoBehaviour
         aimTransform.localScale = aimLocalScale;
         player.transform.localScale = playerLocalScale;
         aimTransform.eulerAngles= new Vector3(0, 0, angle);
-        Debug.Log(angle);
 
     }
     /// <summary>
