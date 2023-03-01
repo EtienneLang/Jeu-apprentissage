@@ -36,9 +36,4 @@ public class GameManager : MonoBehaviour
         instance.player.goldCoins += nbGoldCoins;
     }
 
-    public static void SpawnMedKit(Vector3 position) 
-    {
-    
-    }
-
 }

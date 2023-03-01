@@ -1,8 +1,9 @@
+using Assets.Scripts;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Player : Fighter 
 {
     public int goldCoins = 0;
     public int healtPoints = 100;
