@@ -32,6 +32,7 @@ public class EnemyAI : MonoBehaviour
         if(_seeker.IsDone())
             _seeker.StartPath(_rb.position, _target.position, OnPathComplete);
     }
+
     private void OnPathComplete(Path path)
     {
         if (!path.error)
@@ -69,11 +70,11 @@ public class EnemyAI : MonoBehaviour
 
         if (force.x >= 0.01f)
         {
-            enemyGFX.localScale = new Vector3(-3f, 3f, 3f);
+            enemyGFX.localScale = new Vector3(-2f, 2f, 2f);
         }
         else if (force.x <= -0.01f)
         {
-            enemyGFX.localScale = new Vector3(3f, 3f, 3f);
+            enemyGFX.localScale = new Vector3(2f, 2f, 2f);
         }
     }
 }
