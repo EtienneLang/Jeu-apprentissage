@@ -8,6 +8,7 @@ public class EnemyAI : MonoBehaviour
 
     public Transform _target;
 
+
     public float speed = 200f;
     public float nextWaypointdistance = 3f;
 
@@ -22,6 +23,8 @@ public class EnemyAI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        GameObject player = GameObject.FindGameObjectsWithTag("Player")[0];
+        _target = player.transform;
         _seeker = GetComponent<Seeker>();
         _rb = GetComponent<Rigidbody2D>();
         InvokeRepeating("UpdatePath", 0f,.2f);

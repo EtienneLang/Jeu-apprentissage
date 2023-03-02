@@ -12,9 +12,7 @@ public class TrashCan : Collectable
     {
         GetComponent<SpriteRenderer>().sprite = emptyTrashcan;
         GameManager.ajouterCoins(nbGoldCoins);
-        MedKit medKit = new MedKit();
-
-        Instantiate(medkit, transform.parent.position, Quaternion.identity);
+        GameManager.SpawnMedkit(transform);
     }
 
 

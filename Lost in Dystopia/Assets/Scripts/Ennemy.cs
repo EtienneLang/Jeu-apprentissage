@@ -5,11 +5,10 @@ using UnityEngine;
 
 public class Ennemy : Fighter
 {
-    public GameObject medKit;
 
     protected override void Death()
     {
-        Instantiate(medKit, transform.position, Quaternion.identity);
+        GameManager.SpawnMedkit(transform);
         base.Death();
     }
 

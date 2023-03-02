@@ -6,6 +6,8 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     public Player player;
+    public GameObject medKit;
+    public GameObject BaseEnnemy;
 
     private void Awake()
     {
@@ -21,7 +23,6 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        MedKit medKit = new MedKit();
 
     }
 
@@ -34,6 +35,17 @@ public class GameManager : MonoBehaviour
     public static void ajouterCoins(int nbGoldCoins) 
     {
         instance.player.goldCoins += nbGoldCoins;
+    }
+
+    public static void SpawnMedkit(Transform transform) 
+    {
+        Instantiate(instance.medKit,transform.position, Quaternion.identity);
+    }
+
+    public static void SpawnBaseEnnemy(Vector3 position) 
+    {
+        
+        Instantiate(instance.BaseEnnemy, position , Quaternion.identity);
     }
 
 }
