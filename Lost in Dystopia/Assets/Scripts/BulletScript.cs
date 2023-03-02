@@ -35,6 +35,7 @@ public class BulletScript : Collidable
         {
             Damage dmg = new Damage();
             dmg.nbHitPoints = 5;
+            coll.SendMessage("ReceiveDamage",dmg);
             Destroy(gameObject);
         }
     }
