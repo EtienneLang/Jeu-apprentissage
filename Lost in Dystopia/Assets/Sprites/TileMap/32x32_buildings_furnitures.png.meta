@@ -1,0 +1,1609 @@
+fileFormatVersion: 2
+guid: edf4f0a0567f7c144a84ffdad28e1f40
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_0
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 780
+        width: 95
+        height: 122
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1843717}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2c7f9dbe222d23479d083f410960925
+      internalID: 1476960472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_1
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 780
+        width: 96
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a48e084c455875f49b6a880d09b8e493
+      internalID: -1146626325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_2
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 780
+        width: 96
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 538e9c4918039824c829fbf9cf3d4a8f
+      internalID: -1355205712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_3
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 780
+        width: 96
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 998380252b66b644580eda6d18fdf415
+      internalID: 2137691575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_4
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 780
+        width: 34
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11d91c72c2a03ab448e939e5202ca248
+      internalID: 1045054183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_5
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 780
+        width: 63
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03b4a8532d6a18f4b8a35b87d3a4868b
+      internalID: 448191552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_6
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 780
+        width: 64
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4444a94fd2106aa47aebb57eacf90547
+      internalID: -649134864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_7
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 932
+        width: 33
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9278050cd3b2ebb4ebbd348981fa6e17
+      internalID: -452310362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_8
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 932
+        width: 62
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7a72c2ebe982a24785c89e649bf4902
+      internalID: -1160114216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_9
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 932
+        width: 63
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bdf4f681e30016448ebece17ad31d85
+      internalID: -2030343092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_10
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 932
+        width: 97
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a40ecc805698b7e46847511a0b860699
+      internalID: -1801979287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_11
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 934
+        width: 56
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d52ce8f403e28e44b800e6f9f4af508
+      internalID: 1965443026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_12
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 934
+        width: 56
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3a973e561105884b87991fa4cb129c8
+      internalID: -1922843071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_13
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 974
+        width: 30
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3f1256b5474ae043bac795a15054d53
+      internalID: 1703480309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_14
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 974
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd238227679fde84a96dce9c902e44a3
+      internalID: 1131762186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_15
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 1060
+        width: 33
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e7419bb8565fc447b73d865e77c9978
+      internalID: 10890565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_16
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 1060
+        width: 63
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b40f9d11cd6210f4cbb3761b7b5bbd76
+      internalID: -1124747272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_17
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1060
+        width: 63
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 775866055ca66e943acfd6a688c9590e
+      internalID: -1533614503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_18
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 1060
+        width: 32
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65c877955e0338b4a903c555a14f6335
+      internalID: -558438725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_19
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 1052
+        width: 48
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c38367bdc8b39d4abbdeac9e96aad7a
+      internalID: -1669385052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_20
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 1192
+        width: 48
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1d9f061f79561242bc33e3fdb603ccb
+      internalID: 2131209474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_21
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 1058
+        width: 72
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07ed9a93fca25124ea5aaecd8f4325c2
+      internalID: -1714964287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_22
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 646
+        width: 32
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e60073772b6a7b42bb1ba765c0273a3
+      internalID: -299473078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_23
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 710
+        width: 32
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a7da2df979254741bf842642b31c057
+      internalID: -1192583589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_24
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 520
+        width: 152
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d812010c9f823be4288dd79aa095b6a9
+      internalID: 600597600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_25
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 672
+        width: 93
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d296afedb13431a4c85f783add381d73
+      internalID: -603984333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_26
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 672
+        width: 63
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbefeef9958ea4f4087c0813c515b8c8
+      internalID: 1918182721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_27
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 672
+        width: 92
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 581dece3fa99f5c468c8cb7d0c395b17
+      internalID: -1500890736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_28
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 456
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebbe0e59f2f1d3e40b536e97a6f73deb
+      internalID: 1662142443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_29
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 456
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05287a82a5e4ff74c97ead163565dac7
+      internalID: -1617302379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_30
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 450
+        width: 10
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0403af784f46b1542ad63fd5a6fa4ca2
+      internalID: 1962294692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_31
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 422
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8be56bfc1b25354d81758e2d64ce6f0
+      internalID: -262933921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_32
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 422
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 381418401b4d806478991d58dc3559d7
+      internalID: 597691400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_33
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 420
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3302c7421b9c86e479847dc1fbf09d60
+      internalID: -2042989926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_34
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 486
+        width: 10
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3208e6bd809915c4e87905de81fbabb8
+      internalID: 1934223665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_35
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 518
+        width: 10
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27d9e82edcdf73c479c6f18104a5c59f
+      internalID: -627182180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_36
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 520
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f668eb349f7e2749bb041fc2c403ff7
+      internalID: -1596200227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_37
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 484
+        width: 14
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10c8eeeb7e3a9f7428c1544035d69b1e
+      internalID: -1438657485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_38
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 550
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a4fab874dc555740a242329679d602d
+      internalID: -686918328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_39
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 550
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7026af464d3817488bda1c192cc1404
+      internalID: 1901770273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_40
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 582
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff7e4bd6ae00e3e4695e9620ddb96ea8
+      internalID: -1975626006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_41
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 584
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b852f7c7dd34a043b7c14ff05edd8c4
+      internalID: -1988112942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_42
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 550
+        width: 26
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5058c408b9f6a53408fb0023eef9e42d
+      internalID: -2023317756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_43
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 1196
+        width: 33
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3764b9d7f53d71f4996840be63b294a3
+      internalID: -1117545077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_44
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 1196
+        width: 63
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab0bb0be291898f4db579da40486d086
+      internalID: 2063783929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_45
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1196
+        width: 63
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c0caab2c2728e9468074b54a2e51d15
+      internalID: -623515112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_46
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 1198
+        width: 32
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe52c0889d1c08d46815b752844f393f
+      internalID: -2020056724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_47
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 1320
+        width: 40
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b6c0bf7c468b0f4dbaf4c64454e33a1
+      internalID: -2126795244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_48
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1024
+        width: 97
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55872a6e721a4d4478741604cb534af6
+      internalID: -826949735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_49
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 1194
+        width: 72
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f841c6005e306ea44a174e9aeaab6b72
+      internalID: 1323190636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_50
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 1218
+        width: 97
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7328becb0cf9b5345b963c2cd39359d6
+      internalID: -1720035633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_51
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 672
+        width: 64
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10790fd197dc47b4a87360e42adeeb0e
+      internalID: 830041268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_52
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 576
+        width: 50
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 449e325fe30c30f408ea093bae7debe1
+      internalID: 759673776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_53
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 620
+        width: 64
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b2dadaf11076764b97a8aea4b6391a5
+      internalID: 974805602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_54
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 620
+        width: 63
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8f8dcd0dd1415744b34e829f6db5fc4
+      internalID: -752315543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_55
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 620
+        width: 33
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fe29421126822a4b9fb0a8784767cd4
+      internalID: -1030373693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_56
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 754
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7957d364db5e57e4488bdfe8722076f0
+      internalID: 310436981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_57
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1012
+        width: 60
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4723ab0058402514097e1dd2e53614fc
+      internalID: -656238841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_58
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1108
+        width: 62
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3f9ab364fc78064794b3097c0fe8956
+      internalID: -1396969393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_59
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 948
+        width: 60
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 316d794aa77049343a2fa30e8f9841e4
+      internalID: 2014988794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_60
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 1074
+        width: 108
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a0f6e5c9da4e214fa63f5b4f46c73d8
+      internalID: 734582272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_61
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 946
+        width: 108
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 239653342303f0f49a37c2821e4b0c33
+      internalID: -1228542628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_62
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 1202
+        width: 108
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad1cbda7f021f474b89a3f582744977c
+      internalID: -1830766408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_63
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 1330
+        width: 113
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18a5ad538bf8e624d942a868ed127956
+      internalID: -1885106974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_64
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 610
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0b86f221bb800944b64a984d769d7ee
+      internalID: 1619852474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_65
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 484
+        width: 63
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0d381ff9b5cd4c4ba45c3212aa51546
+      internalID: 551388829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_66
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 483
+        width: 64
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3512dc67eec832d4f9c1e21f4dcf1f56
+      internalID: 1069801734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      32x32_buildings_furnitures_5: 448191552
+      32x32_buildings_furnitures_18: -1533614503
+      32x32_buildings_furnitures_20: -1669385052
+      32x32_buildings_furnitures_47: -2020056724
+      32x32_buildings_furnitures_23: -299473078
+      32x32_buildings_furnitures_25: -1192583589
+      32x32_buildings_furnitures_39: -686918328
+      32x32_buildings_furnitures_26: 600597600
+      32x32_buildings_furnitures_7: -452310362
+      32x32_buildings_furnitures_62: -1228542628
+      32x32_buildings_furnitures_61: 734582272
+      32x32_buildings_furnitures_8: -1160114216
+      32x32_buildings_furnitures_12: -1922843071
+      32x32_buildings_furnitures_14: 1131762186
+      32x32_buildings_furnitures_9: -2030343092
+      32x32_buildings_furnitures_43: -2023317756
+      32x32_buildings_furnitures_51: 830041268
+      32x32_buildings_furnitures_32: 597691400
+      32x32_buildings_furnitures_2: -1355205712
+      32x32_buildings_furnitures_33: -2042989926
+      32x32_buildings_furnitures_31: -262933921
+      32x32_buildings_furnitures_56: 310436981
+      32x32_buildings_furnitures_35: 1934223665
+      32x32_buildings_furnitures_64: 1619852474
+      32x32_buildings_furnitures_15: -2089088639
+      32x32_buildings_furnitures_42: -1988112942
+      32x32_buildings_furnitures_21: 2131209474
+      32x32_buildings_furnitures_45: 2063783929
+      32x32_buildings_furnitures_4: 1045054183
+      32x32_buildings_furnitures_63: -1830766408
+      32x32_buildings_furnitures_48: -826949735
+      32x32_buildings_furnitures_10: -1801979287
+      32x32_buildings_furnitures_13: 1703480309
+      32x32_buildings_furnitures_30: 1962294692
+      32x32_buildings_furnitures_57: 1548056859
+      32x32_buildings_furnitures_36: -627182180
+      32x32_buildings_furnitures_54: -752315543
+      32x32_buildings_furnitures_50: -1720035633
+      32x32_buildings_furnitures_60: 2014988794
+      32x32_buildings_furnitures_55: -1030373693
+      32x32_buildings_furnitures_49: 1323190636
+      32x32_buildings_furnitures_53: 974805602
+      32x32_buildings_furnitures_11: 1965443026
+      32x32_buildings_furnitures_19: -558438725
+      32x32_buildings_furnitures_41: -1975626006
+      32x32_buildings_furnitures_28: 1662142443
+      32x32_buildings_furnitures_34: 1002195839
+      32x32_buildings_furnitures_46: -623515112
+      32x32_buildings_furnitures_17: -1124747272
+      32x32_buildings_furnitures_0: 1476960472
+      32x32_buildings_furnitures_24: -1170592613
+      32x32_buildings_furnitures_37: -1596200227
+      32x32_buildings_furnitures_27: -1500890736
+      32x32_buildings_furnitures_66: 1069801734
+      32x32_buildings_furnitures_16: 10890565
+      32x32_buildings_furnitures_38: -1438657485
+      32x32_buildings_furnitures_65: 551388829
+      32x32_buildings_furnitures_59: -1396969393
+      32x32_buildings_furnitures_6: -649134864
+      32x32_buildings_furnitures_44: -1117545077
+      32x32_buildings_furnitures_3: 2137691575
+      32x32_buildings_furnitures_22: -1714964287
+      32x32_buildings_furnitures_40: 1901770273
+      32x32_buildings_furnitures_29: -1617302379
+      32x32_buildings_furnitures_58: -656238841
+      32x32_buildings_furnitures_1: -1146626325
+      32x32_buildings_furnitures_52: 759673776
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
