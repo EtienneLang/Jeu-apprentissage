@@ -1469,7 +1469,7 @@ TextureImporter:
         width: 32
         height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1490,7 +1490,7 @@ TextureImporter:
         width: 63
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1511,7 +1511,7 @@ TextureImporter:
         width: 64
         height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1564,7 +1564,7 @@ TextureImporter:
       32x32_buildings_furnitures_45: 2063783929
       32x32_buildings_furnitures_4: 1045054183
       32x32_buildings_furnitures_63: -1830766408
-      32x32_buildings_furnitures_48: -826949735
+      32x32_buildings_furnitures_49: 1323190636
       32x32_buildings_furnitures_10: -1801979287
       32x32_buildings_furnitures_13: 1703480309
       32x32_buildings_furnitures_30: 1962294692
@@ -1574,7 +1574,7 @@ TextureImporter:
       32x32_buildings_furnitures_50: -1720035633
       32x32_buildings_furnitures_60: 2014988794
       32x32_buildings_furnitures_55: -1030373693
-      32x32_buildings_furnitures_49: 1323190636
+      32x32_buildings_furnitures_48: -826949735
       32x32_buildings_furnitures_53: 974805602
       32x32_buildings_furnitures_11: 1965443026
       32x32_buildings_furnitures_19: -558438725
