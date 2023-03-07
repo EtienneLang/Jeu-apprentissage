@@ -38,7 +38,7 @@ public class EnemyGFX : MonoBehaviour
         {
             move = false;
         }
-        Debug.Log($"{move}");
+        //Debug.Log($"{move}");
 
 
     }

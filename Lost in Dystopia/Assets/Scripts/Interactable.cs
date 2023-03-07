@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Collectable : Collidable
+public class Interaclable : Collidable
 {
     private bool isLooted = false;
     private bool isInRange;
@@ -10,11 +10,12 @@ public class Collectable : Collidable
 
     protected override void OnCollide(Collider2D coll)
     {
-        if (!isLooted && isInRange && Input.GetKeyDown(lootKey))
+        if (isInRange && Input.GetKeyDown(lootKey))
         {
+            Debug.Log(coll.name);
             if (coll.name == "Player")
             {
-                OnCollect();
+                OnInteraction();
                 isLooted = true;
                 Debug.Log("Looted");
 
@@ -22,7 +23,7 @@ public class Collectable : Collidable
         }
     }
 
-    protected virtual void OnCollect() 
+    protected virtual void OnInteraction() 
     {
         //Logique de quoi faire quand on loot un objet (dans les enfants)
     }
@@ -39,7 +40,7 @@ public class Collectable : Collidable
     protected void OnTriggerExit2D(Collider2D collision)
     {
         isInRange = false;
-        Debug.Log("Player is out of range");
+        //Debug.Log("Player is out of range");
     }
 
 }
