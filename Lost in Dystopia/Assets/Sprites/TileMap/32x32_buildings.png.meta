@@ -1355,6 +1355,279 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_20
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 438
+        width: 77
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8870c305592a7bf4b95729e61d8815b6
+      internalID: -299459197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_25
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 438
+        width: 98
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67e6dc66f40c4094794666e3edc60756
+      internalID: 1950843285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_61
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 438
+        width: 116
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cf91c0d92a0d354abf78004a5937538
+      internalID: -1720806486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_62
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 415
+        width: 12
+        height: 161
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed19af28e0cc8c244bdb0b59243c2039
+      internalID: -1723399378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_63
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 249
+        width: 95
+        height: 161
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 310222b2525919b48acc9e1a34016c92
+      internalID: -1468266279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_64
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 14
+        width: 128
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61573393c9093384da8e1d85b7bfdb90
+      internalID: 1136457264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_65
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 239
+        width: 38
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2308d988e0564914fa137f98622e6aa2
+      internalID: -1683674887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_66
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 438
+        width: 32
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5d4c94990353204d8f466ee93ac27a5
+      internalID: -871214189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_67
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 239
+        width: 83
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f96d1567f1e23c4e9fdb3776a14c23e
+      internalID: -20371009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_68
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 239
+        width: 69
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c15cc134c166b746af12c987969715b
+      internalID: 2101425658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_69
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 239
+        width: 29
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02662fa7e7443fd418ae8e3ea5b43a2a
+      internalID: 980592321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_70
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 239
+        width: 87
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf92cd4dfc6902a4b98707e5d5897647
+      internalID: -117033391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_71
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 239
+        width: 36
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5247853e78001a340b8a343cc4e27e05
+      internalID: -1041813046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -1369,7 +1642,9 @@ TextureImporter:
       32x32_buildings_22: 2136029450
       32x32_buildings_12: -1730864925
       32x32_buildings_11: 1824076112
+      32x32_buildings_61: -1720806486
       32x32_buildings_8: 410153379
+      32x32_buildings_62: -1723399378
       32x32_buildings_40: -48187562
       32x32_buildings_4: 45585322
       32x32_buildings_50: 583277901
@@ -1387,12 +1662,14 @@ TextureImporter:
       32x32_buildings_38: 2039401170
       32x32_buildings_30: 1514860741
       32x32_buildings_17: -509741377
-      32x32_buildings_43: 600887644
+      32x32_buildings_70: -117033391
       32x32_buildings_51: 1738122113
+      32x32_buildings_43: 600887644
       32x32_buildings_34: 65951727
       32x32_buildings_52: -1094166864
       32x32_buildings_25: 1950843285
       32x32_buildings_55: -189712102
+      32x32_buildings_63: -1468266279
       32x32_buildings_33: -1231370752
       32x32_buildings_59: -1810587887
       32x32_buildings_13: 992686826
@@ -1404,11 +1681,15 @@ TextureImporter:
       32x32_buildings_27: 930606253
       32x32_buildings_57: -106092895
       32x32_buildings_45: -469851857
+      32x32_buildings_64: 1136457264
+      32x32_buildings_65: -1683674887
       32x32_buildings_54: -364061398
       32x32_buildings_24: -880626165
       32x32_buildings_36: 1453112542
       32x32_buildings_7: -992112711
+      32x32_buildings_71: -1041813046
       32x32_buildings_16: -1369217955
+      32x32_buildings_66: -871214189
       32x32_buildings_42: -816075429
       32x32_buildings_47: -790944158
       32x32_buildings_39: 1670370111
@@ -1421,11 +1702,14 @@ TextureImporter:
       32x32_buildings_60: 438879290
       32x32_buildings_44: 1578426095
       32x32_buildings_26: 1848869419
+      32x32_buildings_69: 980592321
       32x32_buildings_19: -1322860768
       32x32_buildings_1: 706445759
       32x32_buildings_10: 2016084149
       32x32_buildings_32: 390867944
+      32x32_buildings_67: -20371009
       32x32_buildings_35: 2401690
+      32x32_buildings_68: 2101425658
       32x32_buildings_15: -1848610708
   spritePackingTag: 
   pSDRemoveMatte: 0

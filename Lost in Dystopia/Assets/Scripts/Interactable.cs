@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Interaclable : Collidable
 {
-    protected bool isLooted = false;
     private bool isInRange;
     private Collider2D[] hitsCircle = new Collider2D[5];
     protected CircleCollider2D circleCollider;
@@ -34,11 +33,10 @@ public class Interaclable : Collidable
     {
         if (isInRange && Input.GetKeyDown(lootKey))
         {
-            Debug.Log(coll.name);
+            Debug.Log("Door should open");
             if (coll.name == "Player")
             {
                 OnInteraction();
-                isLooted = true;
                 Debug.Log("Looted");
 
             }

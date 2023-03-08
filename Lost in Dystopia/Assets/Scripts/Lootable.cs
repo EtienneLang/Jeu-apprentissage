@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Lootable : Interaclable
 {
+    private bool isLooted = false;
 
     protected override void OnInteraction()
     {

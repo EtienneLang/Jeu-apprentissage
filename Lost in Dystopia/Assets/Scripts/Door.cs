@@ -11,6 +11,7 @@ public class Door : Interaclable
 
     protected override void OnInteraction()
     {
+        Debug.Log("Door should open");
         if (!openned)
         {
             Debug.Log("Porte ouverte");

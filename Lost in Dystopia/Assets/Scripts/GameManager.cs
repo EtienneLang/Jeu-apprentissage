@@ -7,7 +7,8 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public Player player;
     public GameObject medKit;
-    public GameObject BaseEnnemy;
+    public GameObject baseEnnemy;
+    public GameObject key;
 
     private void Awake()
     {
@@ -45,7 +46,13 @@ public class GameManager : MonoBehaviour
     public static void SpawnBaseEnnemy(Vector3 position) 
     {
         
-        Instantiate(instance.BaseEnnemy, position , Quaternion.identity);
+        Instantiate(instance.baseEnnemy, position , Quaternion.identity);
     }
+
+    public static void SpawnKey(Vector3 position) 
+    {
+        Instantiate(instance.key, position, Quaternion.identity);
+    }
+
 
 }
