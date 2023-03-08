@@ -1359,12 +1359,12 @@ TextureImporter:
       name: 32x32_buildings_20
       rect:
         serializedVersion: 2
-        x: 78
+        x: 76
         y: 438
         width: 77
         height: 170
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1384,8 +1384,8 @@ TextureImporter:
         y: 438
         width: 98
         height: 170
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1405,8 +1405,8 @@ TextureImporter:
         y: 438
         width: 116
         height: 170
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1444,11 +1444,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 416
-        y: 249
-        width: 95
-        height: 161
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 248
+        width: 96
+        height: 162
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1900049}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1468,8 +1468,8 @@ TextureImporter:
         y: 14
         width: 128
         height: 210
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1489,8 +1489,8 @@ TextureImporter:
         y: 239
         width: 38
         height: 177
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1510,8 +1510,8 @@ TextureImporter:
         y: 438
         width: 32
         height: 170
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1531,8 +1531,8 @@ TextureImporter:
         y: 239
         width: 83
         height: 177
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1552,8 +1552,8 @@ TextureImporter:
         y: 239
         width: 69
         height: 177
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1573,8 +1573,8 @@ TextureImporter:
         y: 239
         width: 29
         height: 177
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1590,12 +1590,12 @@ TextureImporter:
       name: 32x32_buildings_70
       rect:
         serializedVersion: 2
-        x: 255
+        x: 254
         y: 239
         width: 87
         height: 177
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1615,8 +1615,8 @@ TextureImporter:
         y: 239
         width: 36
         height: 177
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1624,6 +1624,48 @@ TextureImporter:
       bones: []
       spriteID: 5247853e78001a340b8a343cc4e27e05
       internalID: -1041813046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_72
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 320
+        width: 64
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1900049}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edd29f7fb794c6943b1eb9407efc8f35
+      internalID: -644312123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_73
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 320
+        width: 64
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1900049}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5760a7bd4d15fc3479d92a3c50f4b7d7
+      internalID: 2104727035
       vertices: []
       indices: 
       edges: []
@@ -1651,6 +1693,7 @@ TextureImporter:
       32x32_buildings_53: 869410675
       32x32_buildings_0: -456167814
       32x32_buildings_46: 99260159
+      32x32_buildings_72: -644312123
       32x32_buildings_18: -734505999
       32x32_buildings_58: 796874218
       32x32_buildings_2: 1958054875
@@ -1680,6 +1723,7 @@ TextureImporter:
       32x32_buildings_3: -1257856513
       32x32_buildings_27: 930606253
       32x32_buildings_57: -106092895
+      32x32_buildings_73: 2104727035
       32x32_buildings_45: -469851857
       32x32_buildings_64: 1136457264
       32x32_buildings_65: -1683674887
