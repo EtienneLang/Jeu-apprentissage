@@ -6,11 +6,16 @@ public class Door : Interaclable
 {
     public Sprite opennedDoor;
     public Sprite closedDoor;
+    public GameObject toit;
+    public CapsuleCollider2D playerEntree;
+    public bool toitActive = true;
+
     bool openned = false;
 
 
     protected override void OnInteraction()
     {
+        playerEntree.GetComponent<CapsuleCollider2D>();
         Debug.Log("Door should open");
         if (!openned)
         {
@@ -18,6 +23,7 @@ public class Door : Interaclable
             GetComponent<SpriteRenderer>().sprite = opennedDoor;
             boxCollider.enabled = false;
             openned = true;
+           
         }
         else
         {
@@ -26,6 +32,8 @@ public class Door : Interaclable
             boxCollider.enabled = true;
             openned = false;
         }
-        
+
+
+
     }
 }

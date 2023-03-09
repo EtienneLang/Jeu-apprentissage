@@ -362,10 +362,10 @@ TextureImporter:
         serializedVersion: 2
         x: 352
         y: 97
-        width: 64
+        width: 16
         height: 49
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -382,11 +382,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 352
-        y: 208
-        width: 64
-        height: 48
+        y: 242
+        width: 16
+        height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -407,7 +407,7 @@ TextureImporter:
         width: 116
         height: 114
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -425,10 +425,10 @@ TextureImporter:
         serializedVersion: 2
         x: 352
         y: 146
-        width: 64
-        height: 62
+        width: 18
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -444,10 +444,10 @@ TextureImporter:
       name: 32x32_buildings_roofs_16
       rect:
         serializedVersion: 2
-        x: 416
-        y: 98
-        width: 64
-        height: 48
+        x: 368
+        y: 96
+        width: 98
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -465,12 +465,12 @@ TextureImporter:
       name: 32x32_buildings_roofs_17
       rect:
         serializedVersion: 2
-        x: 416
+        x: 464
         y: 146
-        width: 64
-        height: 62
+        width: 16
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -486,12 +486,12 @@ TextureImporter:
       name: 32x32_buildings_roofs_18
       rect:
         serializedVersion: 2
-        x: 416
-        y: 208
-        width: 64
-        height: 48
+        x: 466
+        y: 242
+        width: 14
+        height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -512,7 +512,7 @@ TextureImporter:
         width: 43
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -533,7 +533,7 @@ TextureImporter:
         width: 43
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -554,7 +554,7 @@ TextureImporter:
         width: 50
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -572,10 +572,10 @@ TextureImporter:
         serializedVersion: 2
         x: 652
         y: 128
-        width: 43
+        width: 12
         height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -596,7 +596,7 @@ TextureImporter:
         width: 50
         height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -617,7 +617,7 @@ TextureImporter:
         width: 43
         height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -638,7 +638,7 @@ TextureImporter:
         width: 43
         height: 42
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -659,7 +659,7 @@ TextureImporter:
         width: 50
         height: 42
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -680,7 +680,7 @@ TextureImporter:
         width: 43
         height: 42
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -688,6 +688,69 @@ TextureImporter:
       bones: []
       spriteID: c108c6378a40ffa4da732894456823c7
       internalID: 1813900625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_roofs_28
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 146
+        width: 94
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90a497bb5db7048458ceb92a59c13c86
+      internalID: 799474420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_roofs_29
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 96
+        width: 14
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bf46a684c2368541b0349857bb8c4c4
+      internalID: -1821736410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_roofs_30
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 242
+        width: 98
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf9de7f3a4266fc4480cf3ddf650a220
+      internalID: 1629717421
       vertices: []
       indices: 
       edges: []
@@ -712,10 +775,12 @@ TextureImporter:
       32x32_buildings_roofs_12: -41143451
       32x32_buildings_roofs_6: 1010648766
       32x32_buildings_roofs_20: 1052739489
+      32x32_buildings_roofs_30: 1629717421
       32x32_buildings_roofs_24: 466559325
       32x32_buildings_roofs_2: -194079259
       32x32_buildings_roofs_23: 1902308690
       32x32_buildings_roofs_25: 1847520942
+      32x32_buildings_roofs_28: 799474420
       32x32_buildings_roofs_15: -1442808901
       32x32_buildings_roofs_26: 1469876042
       32x32_buildings_roofs_3: -2060189333
@@ -723,6 +788,7 @@ TextureImporter:
       32x32_buildings_roofs_0: -1218557219
       32x32_buildings_roofs_1: 619710337
       32x32_buildings_roofs_5: 1177481017
+      32x32_buildings_roofs_29: -1821736410
       32x32_buildings_roofs_9: -964570707
       32x32_buildings_roofs_13: 116547061
       32x32_buildings_roofs_14: 1328883426
