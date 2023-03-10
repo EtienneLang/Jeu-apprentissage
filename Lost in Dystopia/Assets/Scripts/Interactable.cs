@@ -53,14 +53,14 @@ public class Interaclable : Collidable
         if (collision.name == "Player")
         {
             isInRange = true;
-            Debug.Log("player in range");
+            Debug.Log("Player in range - trashcan");
         }
     }
 
     protected void OnTriggerExit2D(Collider2D collision)
     {
         isInRange = false;
-        Debug.Log("Player is out of range");
+        Debug.Log("Player Is leaving - trashcan");
     }
 
 }
