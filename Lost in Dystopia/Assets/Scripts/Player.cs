@@ -5,18 +5,15 @@ using UnityEngine;
 
 public class Player : Fighter 
 {
+    private const int MAX_HEALTH = 100;
     public int goldCoins = 0;
-    public int healtPoints = 100;
+
     public Inventory inventory;
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        
+        maxHealth = MAX_HEALTH;
+        health = maxHealth;
+        HealtBar.SetMaxHealth(maxHealth);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
