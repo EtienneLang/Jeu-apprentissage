@@ -63,21 +63,6 @@ public class EnemyAI : MonoBehaviour
         }
         Vector2 direction = ((Vector2)_path.vectorPath[_currentWaypoint] - _rb.position).normalized;
         Vector2 force = direction * speed * Time.deltaTime;
-         _rb.AddForce(force);
-
-        float distance = Vector2.Distance(_rb.position, _path.vectorPath[_currentWaypoint]);
-        if (distance < nextWaypointdistance)
-        {
-            _currentWaypoint++;
-        }
-
-        if (force.x >= 0.01f)
-        {
-            enemyGFX.localScale = new Vector3(-2f, 2f, 2f);
-        }
-        else if (force.x <= -0.01f)
-        {
-            enemyGFX.localScale = new Vector3(2f, 2f, 2f);
-        }
+        _rb.AddForce(force);
     }
 }
