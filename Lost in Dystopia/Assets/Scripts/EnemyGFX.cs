@@ -7,11 +7,22 @@ public class EnemyGFX : MonoBehaviour
 {
     public AIPath aiPath;
     public Rigidbody2D rb;
-
-    private Vector3 positionAvant;
+    public Animator animator;
+    private Vector3 PrevPos;
+    private Vector3 NewPos;
+    private Vector3 ObjVelocity;
     // Update is called once per frame
-    void Update()
+    public void Start()
     {
+        PrevPos = transform.position;
+        NewPos = transform.position;
+    }
+    void FixedUpdate()
+    {
+        NewPos = transform.position;
+        ObjVelocity = (NewPos - PrevPos) / Time.fixedDeltaTime;  // Pour avoir la vélocité de l'objet
+        PrevPos = NewPos; 
+
         CheckSpeed();
         if (aiPath.desiredVelocity.x >= 0.01f)
         {
@@ -21,16 +32,14 @@ public class EnemyGFX : MonoBehaviour
         {
             transform.localScale = new Vector3(2f, 2f, 2f);
         }
-        positionAvant = rb.transform.position;
     }
 
     public void CheckSpeed()
     {
-        Vector3 positionApres = rb.transform.position;
         bool move = false;
         
         
-        if (positionAvant != positionApres)
+        if (ObjVelocity != Vector3.zero)
         {
             move = true;
         }
@@ -38,8 +47,6 @@ public class EnemyGFX : MonoBehaviour
         {
             move = false;
         }
-        //Debug.Log($"{move}");
-
-
+        animator.SetBool("Move", move);
     }
 }
