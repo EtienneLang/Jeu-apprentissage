@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class PlayerAim : MonoBehaviour
 {
@@ -23,6 +24,7 @@ public class PlayerAim : MonoBehaviour
 
     Vector2 movement;
 
+    public bool Envent { get; private set; }
 
     private void Awake()
     {
@@ -58,6 +60,8 @@ public class PlayerAim : MonoBehaviour
         }
         if (Input.GetMouseButtonDown(0) && canFire)
         {
+            if (EventSystem.current.IsPointerOverGameObject()) //Pour ne pas tirer quand curseur sur UI
+                return;
             canFire = false;
             gunSound.pitch = Random.Range(1.5f, 2.2f);
             gunSound.Play();

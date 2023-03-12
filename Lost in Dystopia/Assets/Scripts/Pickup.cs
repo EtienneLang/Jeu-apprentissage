@@ -6,14 +6,14 @@ public class Pickup : MonoBehaviour
 {
     private Inventory inventory;
     public GameObject itemButton;
-    public AudioSource sonRamasse;
-    public AudioClip clip;
+    private AudioSource sonRamasse;
     void Start()
     {
         inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
+        sonRamasse = GetComponentInParent<AudioSource>();
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
@@ -21,8 +21,9 @@ public class Pickup : MonoBehaviour
             {
                 if (inventory.isFull[i] == false)
                 {
+                    sonRamasse.Play();
+                    Debug.Log("rammassé");
                     inventory.isFull[i] = true;
-                    sonRamasse.PlayOneShot(clip);
                     Instantiate(itemButton, inventory.slots[i].transform,false);
                     Destroy(gameObject);
                     break;

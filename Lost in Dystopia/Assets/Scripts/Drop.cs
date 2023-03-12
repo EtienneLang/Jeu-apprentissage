@@ -5,6 +5,7 @@ using UnityEngine;
 public class Drop : MonoBehaviour
 {
     public GameObject item;
+    public Transform items;
     private Transform player;
     public AudioSource dropSound;
     public AudioClip clip;
@@ -12,11 +13,12 @@ public class Drop : MonoBehaviour
     public void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        items = GameObject.FindGameObjectWithTag("Items").transform;
     }
     public void SpawnDroppedItem()
     {
         dropSound.PlayOneShot(clip);
         Vector2 playerPosition = new Vector2(player.position.x, player.position.y - 0.5f);
-        Instantiate(item, playerPosition, Quaternion.identity);
+        Instantiate(item, playerPosition, Quaternion.identity, items);
     }
 }

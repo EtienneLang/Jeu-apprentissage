@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class PlayerRun : MonoBehaviour
 {
     private const float DEFAULT_MOVEMENT = 2f;
-    private const float SPRINT_SPEED = 0.5f;
+    private const float SPRINT_SPEED = 1f;
     public float movement_speed;
     public Rigidbody2D rb;
     public Animator animator;
@@ -50,6 +50,7 @@ public class PlayerRun : MonoBehaviour
     /// <returns></returns>
     private float PlayerSprint(float speed)
     {
+
         if (Input.GetKey(KeyCode.LeftShift) && staminaBar.value != 0)
         {
             speed = 2;
@@ -69,6 +70,7 @@ public class PlayerRun : MonoBehaviour
 
         if (!isSprinting && stamina < maxStamina)
         {
+            movement_speed = DEFAULT_MOVEMENT;
             IncreaseStamina(); //Si on ne sprint pas et que la stamina n'est pas au maximum, on augmente la stamina
         }
 

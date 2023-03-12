@@ -100,7 +100,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemButton: {fileID: 2196391516951872482, guid: bb554dd849fc24440bd11163bbe0d7bb, type: 3}
   sonRamasse: {fileID: 0}
-  clip: {fileID: 0}
 --- !u!58 &452338871397030160
 CircleCollider2D:
   m_ObjectHideFlags: 0
