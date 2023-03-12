@@ -21,6 +21,7 @@ public class Pickup : MonoBehaviour
             {
                 if (inventory.isFull[i] == false)
                 {
+                    sonRamasse.pitch = Random.Range(0.8f, 1.2f);
                     sonRamasse.Play();
                     Debug.Log("rammassé");
                     inventory.isFull[i] = true;
