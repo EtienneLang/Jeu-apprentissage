@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public GameObject medKit;
     public GameObject baseEnnemy;
     public GameObject key;
+    public FloatingTextManager floatingTextManager;
 
     private void Awake()
     {
@@ -36,6 +37,8 @@ public class GameManager : MonoBehaviour
     public static void ajouterCoins(int nbGoldCoins) 
     {
         instance.player.goldCoins += nbGoldCoins;
+        GameManager.instance.ShowText($"{nbGoldCoins}$", 30, Color.yellow, instance.player.transform.position, Vector3.up * 50, 3);
+        GameManager.instance.HideText();
     }
 
     public static void SpawnMedkit(Transform transform) 
@@ -53,6 +56,17 @@ public class GameManager : MonoBehaviour
     {
         Instantiate(instance.key, position, Quaternion.identity);
     }
+
+    public void ShowText(string msg, int fontSize, Color color, Vector3 position, Vector3 motion, float duration)
+    {
+        floatingTextManager.Show(msg, fontSize, color, position, motion, duration);
+    }
+
+    public void HideText() 
+    {
+        floatingTextManager.Hide();
+    }
+
 
 
 }

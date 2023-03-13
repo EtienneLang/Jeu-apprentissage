@@ -14,7 +14,6 @@ public class TrashCan : Lootable
         GetComponent<SpriteRenderer>().sprite = emptyTrashcan;
         GameManager.ajouterCoins(nbGoldCoins);
         GameManager.SpawnMedkit(transform);
-
     }
 
 
