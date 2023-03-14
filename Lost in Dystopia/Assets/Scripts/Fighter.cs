@@ -20,6 +20,7 @@ namespace Assets.Scripts
             else
             {
                 HealtBar.SetHealt(health);
+                Debug.Log(health);
             }
         }
 
@@ -27,6 +28,7 @@ namespace Assets.Scripts
         {
             Destroy(gameObject);
         }
+
 
     }
 }

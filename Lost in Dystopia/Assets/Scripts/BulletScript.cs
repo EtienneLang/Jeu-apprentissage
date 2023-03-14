@@ -34,7 +34,7 @@ public class BulletScript : Collidable
         if (coll.tag == "Fighter")
         {
             Damage dmg = new Damage();
-            dmg.nbHitPoints = 5;
+            dmg.nbHitPoints = Random.Range(8, 15);
             coll.SendMessage("ReceiveDamage",dmg);
             Destroy(gameObject);
         }

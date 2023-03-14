@@ -14,5 +14,7 @@ public class Player : Fighter
         maxHealth = MAX_HEALTH;
         health = maxHealth;
         HealtBar.SetMaxHealth(maxHealth);
+        
     }
+    
 }
