@@ -62,6 +62,11 @@ public class GameManager : MonoBehaviour
         floatingTextManager.Show(msg, fontSize, color, position, motion, duration);
     }
 
+    public void ShowStillText(string msg, int fontSize, Color color, Vector3 position) 
+    {
+        floatingTextManager.ShowStillText(msg, fontSize, color, position);
+    }
+
     public void HideText() 
     {
         floatingTextManager.Hide();

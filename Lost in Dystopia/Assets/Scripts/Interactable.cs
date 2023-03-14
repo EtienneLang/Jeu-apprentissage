@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Interaclable : Collidable
 {
-    private bool isInRange;
+    protected bool isInRange;
     private Collider2D[] hitsCircle = new Collider2D[5];
     protected CircleCollider2D circleCollider;
     public ContactFilter2D contactCircle;
@@ -33,11 +33,9 @@ public class Interaclable : Collidable
     {
         if (isInRange && Input.GetKeyDown(lootKey))
         {
-            Debug.Log("Door should open");
             if (coll.name == "Player")
             {
                 OnInteraction();
-                Debug.Log("Looted");
 
             }
         }
@@ -53,14 +51,13 @@ public class Interaclable : Collidable
         if (collision.name == "Player")
         {
             isInRange = true;
-            Debug.Log("Player in range - trashcan");
         }
     }
 
     protected void OnTriggerExit2D(Collider2D collision)
     {
         isInRange = false;
-        Debug.Log("Player Is leaving - trashcan");
+
     }
 
 }

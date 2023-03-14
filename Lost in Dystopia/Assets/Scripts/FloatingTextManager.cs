@@ -1,3 +1,4 @@
+using Assets.Scripts;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,6 +10,7 @@ public class FloatingTextManager : MonoBehaviour
     public GameObject textPrefab;
 
     private List<FloatingText> floatingTexts = new List<FloatingText>();
+    private List<StillText> stillTexts = new List<StillText>();
 
     private FloatingText GetFloatingText() 
     {
@@ -22,6 +24,20 @@ public class FloatingTextManager : MonoBehaviour
             floatingTexts.Add(txt);
         }
 
+        return txt;
+    }
+
+    private StillText GetStillText() 
+    {
+        StillText txt = stillTexts.Find(t => !t.active);
+        if (txt == null)
+        {
+            txt = new StillText();
+            txt.go = Instantiate(textPrefab);
+            txt.go.transform.SetParent(textContainer.transform);
+            txt.txt = txt.go.GetComponent<Text>();
+            stillTexts.Add(txt);
+        }
         return txt;
     }
 
@@ -48,13 +64,23 @@ public class FloatingTextManager : MonoBehaviour
 
     public void Hide()
     {
-        FloatingText floatingText = GetFloatingText();
-        floatingText.Hide();
+        foreach (StillText stillText in stillTexts)
+        {
+            if (stillText.active)
+            {
+                stillText.Hide();
+            }
+        }
     }
 
-    public void ShowStillText() 
+    public void ShowStillText(string msg, int fontSize, Color color, Vector3 position) 
     {
-        FloatingText floatingText = GetFloatingText();
-
+        StillText stillText = GetStillText();
+        stillText.txt.text = msg;
+        stillText.txt.fontSize = fontSize;
+        stillText.txt.color = color;
+        Vector3 truePostition = position + Vector3.up;
+        stillText.go.transform.position = Camera.main.WorldToScreenPoint(truePostition);
+        stillText.Show();
     }
 }
