@@ -15,6 +15,7 @@ public class Ennemy : Fighter
     public LayerMask playerLayers;
     private float timeAttack = 0;
 
+    public AudioSource attackSound;
     private void Start()
     {
         maxHealth = MAX_HEALTH;
@@ -40,7 +41,7 @@ public class Ennemy : Fighter
        
         Collider2D[] hitPlayer = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, playerLayers);
 
-        if (hitPlayer.Length > 0 && seconds-timeAttack >= 2)
+        if (hitPlayer.Length > 0 && seconds-timeAttack >= 3)
         {
             Attack(hitPlayer);
         }
@@ -52,6 +53,7 @@ public class Ennemy : Fighter
         timeAttack = (int)timer % 60;
         foreach (Collider2D player in hitPlayer) 
         {
+            attackSound.Play();
             Damage dmg = new Damage();
             dmg.nbHitPoints = Random.Range(5,10);
             player.SendMessage("ReceiveDamage", dmg);
