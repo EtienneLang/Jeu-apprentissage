@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class roofManager : Interaclable
 {
-    private bool visible = true;
+    private bool visible = false;
     public GameObject roof;
 
     protected override void Update()
