@@ -64,7 +64,7 @@ public class EnemyAI : MonoBehaviour
 
         float distance = Vector3.Distance(_target.transform.position, _rb.transform.position);
 
-        if (distance < 6f)
+        if (distance < 4f)
         {
             _target = player.transform;
             Debug.Log("Le joueur est assez proche");

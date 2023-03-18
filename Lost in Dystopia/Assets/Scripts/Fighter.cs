@@ -7,10 +7,13 @@ namespace Assets.Scripts
         public int health;
         public int maxHealth;
         public HealtBar HealtBar;
+        public GameObject ps;
+
 
         protected virtual void ReceiveDamage(Damage dmg)
         {
             health -= dmg.nbHitPoints;
+            ps.Play();
             if (health <= 0)
             {
                 health = 0;
