@@ -14,7 +14,6 @@ public class Ennemy : Fighter
     public Transform attackPoint;
     public LayerMask playerLayers;
     private float timeAttack = 0;
-    private ParticleSystem ps;
 
     public AudioSource attackSound;
     private void Start()
@@ -23,7 +22,6 @@ public class Ennemy : Fighter
         health = maxHealth;
         HealtBar.SetMaxHealth(maxHealth);
         goldCoins = Random.Range(1,10);
-        ps = GetComponent<ParticleSystem>();
     }
     private void Update()
     {

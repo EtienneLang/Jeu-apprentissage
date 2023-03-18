@@ -8,6 +8,7 @@ public class BulletScript : Collidable
     private Camera mainCam;
     private Rigidbody2D rb;
     public float force;
+    public GameObject blood;
     // Start is called before the first frame update
     protected override void Start()
     {
@@ -37,6 +38,10 @@ public class BulletScript : Collidable
             dmg.nbHitPoints = Random.Range(8, 15);
             coll.SendMessage("ReceiveDamage",dmg);
             Destroy(gameObject);
+            Debug.Log(gameObject.name);
+            Instantiate(blood, transform.position, Quaternion.identity);
+            Debug.Log(transform.position);
+
         }
     }
 }
