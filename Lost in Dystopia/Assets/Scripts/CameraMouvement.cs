@@ -7,7 +7,7 @@ public class CameraMouvement : MonoBehaviour
     public float FollowSpeed = 2f;
     public float yOffset = 1f;
     public Transform target;
-    public float size = 5f;
+    public float size;
     private Vector3 _min;
     private Vector3 _max;
     public EdgeCollider2D CameraCollider;
