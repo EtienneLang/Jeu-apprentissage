@@ -32,7 +32,7 @@ public class BulletScript : Collidable
         {
             Destroy(gameObject);
         }
-        if (coll.tag == "Fighter" || coll.tag == "Player")
+        if (coll.tag == "Fighter")
         {
             Debug.Log(coll.tag);
             Damage dmg = new Damage();
