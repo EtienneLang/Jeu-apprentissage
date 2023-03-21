@@ -13,7 +13,7 @@ public class EnnemyBulletScript : Collidable
     {
         rb = GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag("Player");
-
+        boxCollider = GetComponent<BoxCollider2D>();
         Vector3 direction = player.transform.position - transform.position;
         rb.velocity = new Vector2 (direction.x, direction.y).normalized * force;
 
@@ -26,18 +26,21 @@ public class EnnemyBulletScript : Collidable
     {
         if (coll.tag == "Wall")
         {
+            Debug.Log("Hit the wall");
             Destroy(gameObject);
         }
-        if (coll.tag == "Fighter")
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.name == "Hitbox")
         {
-            Debug.Log(coll.tag);
+            Debug.Log("hit the player");
             Damage dmg = new Damage();
-            dmg.nbHitPoints = Random.Range(8, 15);
-            coll.SendMessage("ReceiveDamage", dmg);
+            dmg.nbHitPoints = 1;
+            player.SendMessage("ReceiveDamage", dmg);
             Destroy(gameObject);
-            Debug.Log(gameObject.name);
             Instantiate(blood, transform.position, Quaternion.identity);
-            Debug.Log(transform.position);
         }
     }
 }

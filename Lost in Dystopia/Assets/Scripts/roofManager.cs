@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class roofManager : Interaclable
 {
-    private bool visible = false;
+    private bool visible = true;
     public GameObject roof;
 
     protected override void Update()
@@ -17,9 +17,13 @@ public class roofManager : Interaclable
     }
     private new void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!visible)
-            visible = true;
-        else if (visible)
-            visible = false;   
+        if (collision.tag == "Player")
+        {
+            Debug.Log("Player hits collider");
+            if (!visible)
+                visible = true;
+            else if (visible)
+                visible = false;
+        }
     }
 }

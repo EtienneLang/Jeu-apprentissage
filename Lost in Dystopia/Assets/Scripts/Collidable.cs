@@ -12,7 +12,6 @@ public class Collidable : MonoBehaviour
     protected virtual void Start() 
     {
         boxCollider = GetComponent<BoxCollider2D>();
-        Debug.Log(boxCollider.name);
     }
 
     protected virtual void Update() 
@@ -30,6 +29,6 @@ public class Collidable : MonoBehaviour
 
     protected virtual void OnCollide(Collider2D coll)
     {
-        Debug.Log(coll.name);
+        //Pour les enfants
     }
 }

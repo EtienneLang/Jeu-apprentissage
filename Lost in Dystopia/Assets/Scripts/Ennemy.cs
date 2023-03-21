@@ -53,10 +53,13 @@ public class Ennemy : Fighter
         timeAttack = (int)timer % 60;
         foreach (Collider2D player in hitPlayer) 
         {
-            attackSound.Play();
-            Damage dmg = new Damage();
-            dmg.nbHitPoints = Random.Range(5,10);
-            player.SendMessage("ReceiveDamage", dmg);
+            if (player.tag == "Player")
+            {
+                attackSound.Play();
+                Damage dmg = new Damage();
+                dmg.nbHitPoints = Random.Range(5, 10);
+                player.SendMessage("ReceiveDamage", dmg);
+            }
         }
     }
 
