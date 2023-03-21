@@ -1469,7 +1469,7 @@ TextureImporter:
         width: 128
         height: 210
       alignment: 9
-      pivot: {x: 0.5, y: 0.15}
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2132,6 +2132,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_96
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 448
+        width: 96
+        height: 154
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e23acd88a5e35a1409a805e5f8826a87
+      internalID: -982756845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -2161,6 +2182,7 @@ TextureImporter:
       32x32_buildings_48: -416415036
       32x32_buildings_30: 1514860741
       32x32_buildings_17: -509741377
+      32x32_buildings_96: -982756845
       32x32_buildings_90: 999030339
       32x32_buildings_92: 1249451843
       32x32_buildings_13: 992686826
