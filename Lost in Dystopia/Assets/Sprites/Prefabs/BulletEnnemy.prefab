@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8560922452210850609}
   - component: {fileID: 9091734830667907122}
   - component: {fileID: 7340127134145215386}
+  - component: {fileID: 788780316001000723}
   m_Layer: 0
   m_Name: BulletEnnemy
   m_TagString: Untagged
@@ -162,3 +163,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &788780316001000723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137614329458344414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55207b2b8856a834387089e95a09efde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 10
