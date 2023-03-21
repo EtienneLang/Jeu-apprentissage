@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -40,22 +41,27 @@ public class EnnemyShooting : MonoBehaviour
         }
         aimTransform.localScale = aimLocalScale;
         self.transform.localScale = playerLocalScale;
+        
         aimTransform.eulerAngles = new Vector3(0, 0, angle);
-        Debug.Log(aimTransform.eulerAngles);
         timer += Time.deltaTime;
         if (timer > 2)
         {
-            if (timer >2.15)
+            if (Math.Round(timer, 1) % 0.5f == 0)
+            {
+                Shoot();
+            }
+            if (timer >4)
             {
                 timer = 0;
-                
             }
-            Shoot();
         }
     }
 
     void Shoot()
     {
+        aimDirection = (target.transform.position - transform.position).normalized;
+        float angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
+        aimTransform.eulerAngles = new Vector3(0, 0, angle + UnityEngine.Random.Range(0, 30));
         Instantiate(bullet, bulletPos.position, Quaternion.identity);
     }
 }

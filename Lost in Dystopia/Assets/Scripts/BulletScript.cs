@@ -34,6 +34,7 @@ public class BulletScript : Collidable
         }
         if (coll.tag == "Fighter")
         {
+            Debug.Log(coll.tag);
             Damage dmg = new Damage();
             dmg.nbHitPoints = Random.Range(8, 15);
             coll.SendMessage("ReceiveDamage",dmg);
@@ -41,7 +42,6 @@ public class BulletScript : Collidable
             Debug.Log(gameObject.name);
             Instantiate(blood, transform.position, Quaternion.identity);
             Debug.Log(transform.position);
-
         }
     }
 }

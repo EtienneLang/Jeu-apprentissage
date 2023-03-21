@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5725056352472932302}
   - component: {fileID: 5056483201051645188}
-  - component: {fileID: 8560922452210850609}
   - component: {fileID: 9091734830667907122}
   - component: {fileID: 7340127134145215386}
   - component: {fileID: 788780316001000723}
@@ -88,34 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8560922452210850609
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 137614329458344414}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec8e2f70daa4b7548acafc73dbd47d26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  contact:
-    useTriggers: 0
-    useLayerMask: 0
-    useDepth: 0
-    useOutsideDepth: 0
-    useNormalAngle: 0
-    useOutsideNormalAngle: 0
-    layerMask:
-      serializedVersion: 2
-      m_Bits: 0
-    minDepth: 0
-    maxDepth: 0
-    minNormalAngle: 0
-    maxNormalAngle: 0
-  force: 15
-  blood: {fileID: 229139621171367267, guid: 46161f923f841d246b39258b81ad3bb3, type: 3}
 --- !u!50 &9091734830667907122
 Rigidbody2D:
   serializedVersion: 4
@@ -175,4 +146,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55207b2b8856a834387089e95a09efde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 10
+  contact:
+    useTriggers: 0
+    useLayerMask: 0
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 0
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
+  force: 15
+  blood: {fileID: 229139621171367267, guid: 46161f923f841d246b39258b81ad3bb3, type: 3}
