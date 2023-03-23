@@ -13,7 +13,9 @@ GameObject:
   - component: {fileID: 3247098338012557991}
   - component: {fileID: 1557980316775481034}
   - component: {fileID: -3863217387369922948}
-  m_Layer: 5
+  - component: {fileID: 2089221984162756556}
+  - component: {fileID: -8317820896521389163}
+  m_Layer: 8
   m_Name: CigButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47,7 +49,7 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2196391516951872482}
-  m_CullTransparentMesh: 1
+  m_CullTransparentMesh: 0
 --- !u!114 &3247098338012557991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85,7 +87,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2196391516951872482}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
@@ -135,5 +137,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 452338871397030161, guid: 82fbb29e40352ee4caa38cb8d0bf284e, type: 3}
+  items: {fileID: 0}
   dropSound: {fileID: 0}
   clip: {fileID: 0}
+--- !u!114 &2089221984162756556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2196391516951872482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91cbc925db89af0419fddb79a17c1a9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!225 &-8317820896521389163
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2196391516951872482}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0

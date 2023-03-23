@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UIElements;
 
-public class slot : MonoBehaviour
+public class slot : MonoBehaviour, IDropHandler
 {
     private AudioSource sonDrop;
     private Inventory inventory;
@@ -34,6 +36,17 @@ public class slot : MonoBehaviour
             sonDrop.Play();
             child.GetComponent<Drop>().SpawnDroppedItem();
             GameObject.Destroy(child.gameObject);
+        }
+    }
+
+    public void OnDrop(PointerEventData eventData)
+    {
+        Debug.Log("OnDrop");
+        if (eventData.pointerDrag != null)
+        {
+            eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
+            inventory.isFull[i] = false;
+            
         }
     }
 }
