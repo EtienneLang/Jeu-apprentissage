@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 3247098338012557991}
   - component: {fileID: 1557980316775481034}
   - component: {fileID: -3863217387369922948}
+  - component: {fileID: 7271788017773943272}
+  - component: {fileID: 8963435628922139182}
   m_Layer: 5
   m_Name: KeyButton
   m_TagString: Untagged
@@ -135,5 +137,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 452338871397030161, guid: c4b0ae8735e5a1a4d8ff33c675ef7534, type: 3}
+  items: {fileID: 0}
   dropSound: {fileID: 0}
   clip: {fileID: 0}
+--- !u!114 &7271788017773943272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2196391516951872482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91cbc925db89af0419fddb79a17c1a9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentAfterDrag: {fileID: 0}
+--- !u!225 &8963435628922139182
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2196391516951872482}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0

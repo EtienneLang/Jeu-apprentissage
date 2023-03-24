@@ -13,7 +13,6 @@ public class slot : MonoBehaviour, IDropHandler
     private void Start()
     {
         inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
-        sonDrop = GetComponentInParent<AudioSource>();
     }
 
     private void Update()
@@ -33,7 +32,7 @@ public class slot : MonoBehaviour, IDropHandler
     {
         foreach (Transform child in transform)
         {
-            sonDrop.Play();
+            //sonDrop.Play();
             child.GetComponent<Drop>().SpawnDroppedItem();
             GameObject.Destroy(child.gameObject);
         }
@@ -44,8 +43,12 @@ public class slot : MonoBehaviour, IDropHandler
         Debug.Log("OnDrop");
         if (eventData.pointerDrag != null)
         {
-            eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
-            inventory.isFull[i] = false;
+            if (transform.childCount == 0)
+            {
+                GameObject dropped = eventData.pointerDrag;
+                DragDrop draggable = dropped.GetComponent<DragDrop>();
+                draggable.parentAfterDrag = transform;
+            }
             
         }
     }
