@@ -5,7 +5,7 @@ using UnityEngine;
 public class Drop : MonoBehaviour
 {
     public GameObject item;
-    public Transform items;
+    private Transform items;
     private Transform player;
     public AudioSource dropSound;
     public AudioClip clip;

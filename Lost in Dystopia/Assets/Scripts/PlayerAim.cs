@@ -29,6 +29,7 @@ public class PlayerAim : MonoBehaviour
     private void Awake()
     {
         player = GameObject.Find("Player");
+        //aimTransform = transform.Find("AK_Prefab");
         aimTransform = transform.Find("Aim");
         aimAnimator = aimTransform.GetComponent<Animator>();
         aimGunEndPointTransform = aimTransform.Find("GunEndPointPosition");
