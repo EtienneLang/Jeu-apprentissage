@@ -32,6 +32,7 @@ public class slot : MonoBehaviour, IDropHandler
     {
         foreach (Transform child in transform)
         {
+            Debug.Log("Entré");
             //sonDrop.Play();
             child.GetComponent<Drop>().SpawnDroppedItem();
             GameObject.Destroy(child.gameObject);
