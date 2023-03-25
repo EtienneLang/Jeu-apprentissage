@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Net.Sockets;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UIElements;
@@ -9,6 +10,8 @@ public class slot : MonoBehaviour, IDropHandler
     private AudioSource sonDrop;
     private Inventory inventory;
     public int i;
+
+
 
     private void Start()
     {
@@ -25,7 +28,6 @@ public class slot : MonoBehaviour, IDropHandler
         {
             inventory.isFull[i] = true;
         }
-
     }
 
     public void DropItem()
@@ -50,7 +52,6 @@ public class slot : MonoBehaviour, IDropHandler
                 DragDrop draggable = dropped.GetComponent<DragDrop>();
                 draggable.parentAfterDrag = transform;
             }
-            
         }
     }
 }

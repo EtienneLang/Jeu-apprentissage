@@ -37,10 +37,13 @@ public class PlayerAim : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        HandleAiming();
-        HandleShooting();
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
+        
+            HandleAiming();
+            
+            movement.x = Input.GetAxisRaw("Horizontal");
+            movement.y = Input.GetAxisRaw("Vertical");
+        
+        
     }
 
     private void FixedUpdate()
@@ -94,10 +97,13 @@ public class PlayerAim : MonoBehaviour
             aimLocalScale.y = +1f;
             playerLocalScale.x = -1f;
         }
-        aimTransform.localScale = aimLocalScale;
+        if (aimTransform != null)
+        {
+            aimTransform.localScale = aimLocalScale;
+            aimTransform.eulerAngles = new Vector3(0, 0, angle);
+            HandleShooting();
+        }
         player.transform.localScale = playerLocalScale;
-        aimTransform.eulerAngles= new Vector3(0, 0, angle);
-
     }
     /// <summary>
     /// Crée un vecteur avec la position de la souris et de la camera
