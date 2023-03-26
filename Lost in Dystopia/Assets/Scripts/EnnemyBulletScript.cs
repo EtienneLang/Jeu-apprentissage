@@ -26,7 +26,6 @@ public class EnnemyBulletScript : Collidable
     {
         if (coll.tag == "Wall")
         {
-            Debug.Log("Hit the wall");
             Destroy(gameObject);
         }
     }
@@ -35,7 +34,6 @@ public class EnnemyBulletScript : Collidable
     {
         if (collision.name == "Hitbox")
         {
-            Debug.Log("hit the player");
             Damage dmg = new Damage();
             dmg.nbHitPoints = 1;
             player.SendMessage("ReceiveDamage", dmg);
