@@ -19,6 +19,7 @@ public class EnemyAI : MonoBehaviour
     private Rigidbody2D _rb;
     private GameObject player;
     public Transform enemyGFX;
+    public const float DISTANCE_REPERAGE = 4f;
 
     // Start is called before the first frame update
     void Start()
