@@ -18,6 +18,8 @@ public class SceneSwitch : MonoBehaviour
     {
         if (enter)
         {
+            GameManager.instance.HideText();
+            GameManager.instance.ShowStillText($"{timer.ToString("N2")}", 25, Color.white, GameManager.instance.player.transform.position);
             Debug.Log(timer);
             timer += Time.deltaTime;
             if (timer >= 5)
@@ -29,6 +31,7 @@ public class SceneSwitch : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
+        GameManager.instance.HideText();
         timer = 0;
         Debug.Log("out");
         enter = false;
