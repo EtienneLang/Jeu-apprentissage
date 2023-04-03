@@ -79,7 +79,7 @@ public class FloatingTextManager : MonoBehaviour
         stillText.txt.text = msg;
         stillText.txt.fontSize = fontSize;
         stillText.txt.color = color;
-        Vector3 truePostition = position + Vector3.up;
+        Vector3 truePostition = position + new Vector3(0, 0.5f, 0);
         stillText.go.transform.position = Camera.main.WorldToScreenPoint(truePostition);
         stillText.Show();
     }

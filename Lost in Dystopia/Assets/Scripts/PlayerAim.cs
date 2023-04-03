@@ -17,7 +17,7 @@ public class PlayerAim : MonoBehaviour
     private float timer;
     public float timeBetweenFiring;
 
-    public float movement_speed = 1f;
+    private float movement_speed = 1f;
     public Rigidbody2D rb;
 
     public AudioSource gunSound;
@@ -48,6 +48,7 @@ public class PlayerAim : MonoBehaviour
 
     private void FixedUpdate()
     {
+        Debug.Log(movement_speed);
         rb.MovePosition(rb.position + movement * movement_speed * Time.fixedDeltaTime);
     }
     private void HandleShooting()
