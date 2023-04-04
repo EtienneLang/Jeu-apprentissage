@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -48,7 +49,6 @@ public class PlayerAim : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Debug.Log(movement_speed);
         rb.MovePosition(rb.position + movement * movement_speed * Time.fixedDeltaTime);
     }
     private void HandleShooting()
@@ -68,7 +68,7 @@ public class PlayerAim : MonoBehaviour
             if (EventSystem.current.IsPointerOverGameObject()) //Pour ne pas tirer quand curseur sur UI
                 return;
             canFire = false;
-            gunSound.pitch = Random.Range(1.5f, 2.2f);
+            gunSound.pitch = UnityEngine.Random.Range(1.5f, 2.2f);
             gunSound.Play();
             aimAnimator.SetTrigger("Shoot");
             Instantiate(bullet, bulletTransform.position, Quaternion.identity);

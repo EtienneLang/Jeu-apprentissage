@@ -8,6 +8,7 @@ TagManager:
   - Fighter
   - Roof
   - Items
+  - Event
   layers:
   - Default
   - TransparentFX
