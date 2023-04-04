@@ -36,7 +36,6 @@ public class Interaclable : Collidable
             if (coll.name == "Player")
             {
                 OnInteraction();
-
             }
         }
     }
@@ -57,7 +56,6 @@ public class Interaclable : Collidable
     protected void OnTriggerExit2D(Collider2D collision)
     {
         isInRange = false;
-
     }
 
 }

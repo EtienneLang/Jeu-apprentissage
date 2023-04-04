@@ -9,9 +9,10 @@ public class ButtonInfo : MonoBehaviour
     public Text priceTxt;
     public GameObject ShopManager;
 
+
     // Update is called once per frame
     void Update()
     {
-        priceTxt.text = ShopManager.GetComponent<ShopManagerScript>().shopItems[2, ItemID].ToString();
+        priceTxt.text = ShopManager.GetComponent<ShopManagerScript>().shopItems[1, ItemID].ToString();
     }
 }
