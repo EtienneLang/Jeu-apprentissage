@@ -1616,7 +1616,7 @@ TextureImporter:
         width: 130
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1624,6 +1624,48 @@ TextureImporter:
       bones: []
       spriteID: f709d3497c71a7340b083dd362b958c4
       internalID: 861221154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_72
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 416
+        width: 54
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 991abfbda0e2c5b40846b6b7914b7068
+      internalID: 1992098494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_buildings_furnitures_73
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 416
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f987ee8d5e33dc4daacecdfec8f3223
+      internalID: 255573146
       vertices: []
       indices: 
       edges: []
@@ -1669,7 +1711,7 @@ TextureImporter:
       32x32_buildings_furnitures_45: 2063783929
       32x32_buildings_furnitures_4: 1045054183
       32x32_buildings_furnitures_63: -1830766408
-      32x32_buildings_furnitures_48: -826949735
+      32x32_buildings_furnitures_49: 1323190636
       32x32_buildings_furnitures_10: -1801979287
       32x32_buildings_furnitures_13: 1703480309
       32x32_buildings_furnitures_30: 1962294692
@@ -1678,10 +1720,12 @@ TextureImporter:
       32x32_buildings_furnitures_54: -752315543
       32x32_buildings_furnitures_50: -1720035633
       32x32_buildings_furnitures_60: 2014988794
+      32x32_buildings_furnitures_73: 255573146
       32x32_buildings_furnitures_55: -1030373693
-      32x32_buildings_furnitures_49: 1323190636
+      32x32_buildings_furnitures_48: -826949735
       32x32_buildings_furnitures_70: 1374279431
       32x32_buildings_furnitures_53: 974805602
+      32x32_buildings_furnitures_72: 1992098494
       32x32_buildings_furnitures_11: 1965443026
       32x32_buildings_furnitures_71: 861221154
       32x32_buildings_furnitures_19: -558438725
