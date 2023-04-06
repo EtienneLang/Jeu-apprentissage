@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
+using System.Diagnostics;
 
 public class EnemyAI : MonoBehaviour
 {
 
-    public Transform _target;
+    private Transform _target;
 
 
     public float speed;
@@ -25,10 +26,9 @@ public class EnemyAI : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        _target = player.transform;
         _seeker = GetComponent<Seeker>();
         _rb = GetComponent<Rigidbody2D>();
-        InvokeRepeating("UpdatePath", 0f,.2f);
+        
     }
     private void UpdatePath()
     {
@@ -45,9 +45,9 @@ public class EnemyAI : MonoBehaviour
         }
     }
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
-        _target = player.transform;
+
         if (_path == null)
         {
             return;
@@ -63,21 +63,20 @@ public class EnemyAI : MonoBehaviour
             _reachedEndOfPath = false;
         }
 
-        float distance = Vector3.Distance(_target.transform.position, _rb.transform.position);
-
+        float distance = Vector3.Distance(player.transform.position, _rb.transform.position);
         if (distance < 4f)
         {
             _target = player.transform;
             Debug.Log("Le joueur est assez proche");
+            InvokeRepeating("UpdatePath", 0f, .2f);
             _targetIsSeen = true;
         }
-        else if (!_targetIsSeen)
+        if (_targetIsSeen)
         {
-            _target = _rb.transform;
+            Vector2 direction = ((Vector2)_path.vectorPath[_currentWaypoint] - _rb.position).normalized;
+            Vector2 force = direction * speed * Time.deltaTime;
+            _rb.AddForce(force);
         }
-
-        Vector2 direction = ((Vector2)_path.vectorPath[_currentWaypoint] - _rb.position).normalized;
-        Vector2 force = direction * speed * Time.deltaTime;
-        _rb.AddForce(force);
+        
     }
 }

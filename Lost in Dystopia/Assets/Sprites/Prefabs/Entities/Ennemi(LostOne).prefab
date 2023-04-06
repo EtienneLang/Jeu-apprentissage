@@ -348,7 +348,6 @@ MonoBehaviour:
   health: 10
   maxHealth: 0
   HealtBar: {fileID: 2907747461923327726}
-  blood: {fileID: 229139621171367267, guid: 46161f923f841d246b39258b81ad3bb3, type: 3}
   attackRange: 0.5
   attackPoint: {fileID: 7205326194624491457}
   playerLayers:
