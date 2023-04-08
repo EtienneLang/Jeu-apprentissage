@@ -15,7 +15,7 @@ public class slot : MonoBehaviour, IDropHandler
 
     private void Start()
     {
-        inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
+        inventory = GameObject.FindGameObjectWithTag("Inventaire").GetComponent<Inventory>();
     }
 
     private void Update()

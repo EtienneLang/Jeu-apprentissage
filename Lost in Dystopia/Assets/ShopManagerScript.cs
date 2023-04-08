@@ -19,7 +19,7 @@ public class ShopManagerScript : MonoBehaviour
         Player playerScript = player.GetComponent<Player>();
         playerCoins = playerScript.GoldCoins;
         coinsTxt.text = playerCoins.ToString();
-        inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
+        inventory = GameObject.FindGameObjectWithTag("Inventaire").GetComponent<Inventory>();
 
         //Id's
         shopItems[0,0] = 1;

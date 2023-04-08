@@ -9,6 +9,7 @@ TagManager:
   - Roof
   - Items
   - Event
+  - Inventaire
   layers:
   - Default
   - TransparentFX

@@ -9,13 +9,11 @@ public class Player : Fighter
     public int goldCoins = 0;
 
     public int GoldCoins { get { return goldCoins; } set {goldCoins=value;} }
-    public Inventory inventory;
     private void Start()
     {
         maxHealth = MAX_HEALTH;
         health = maxHealth;
         HealtBar.SetMaxHealth(maxHealth);
-        
     }
     
 }

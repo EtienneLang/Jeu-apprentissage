@@ -9,7 +9,7 @@ public class Pickup : MonoBehaviour
     private AudioSource sonRamasse;
     void Start()
     {
-        inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
+        inventory = GameObject.FindGameObjectWithTag("Inventaire").GetComponent<Inventory>();
         sonRamasse = GetComponentInParent<AudioSource>();
     }
 
