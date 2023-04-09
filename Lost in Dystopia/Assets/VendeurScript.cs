@@ -34,9 +34,19 @@ public class VendeurScript : Interaclable
         }
         
     }
-    // Update is called once per frame
-    protected override void OnInteraction()
-    {
-        
-    }
+    //NE MARCHE PAS JE NE SAIS PAS POURQUOI
+    //protected new void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    if (collision.tag == "Player")
+    //    {
+    //        GameManager.instance.ShowStillText("Press M to open the map", 25, Color.white, GameManager.instance.player.transform.position);
+    //    }
+    //}
+
+    //protected new void OnTriggerExit2D(Collider2D collision)
+    //{
+    //    GameManager.instance.HideText();
+    //}
+
+
 }

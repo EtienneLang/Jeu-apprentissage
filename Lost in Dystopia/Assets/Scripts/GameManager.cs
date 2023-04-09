@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        floatingTextManager = GameObject.FindGameObjectWithTag("TextManager").GetComponent<FloatingTextManager>();
     }
 
     // Update is called once per frame

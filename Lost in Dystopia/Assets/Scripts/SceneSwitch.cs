@@ -36,6 +36,5 @@ public class SceneSwitch : MonoBehaviour
         timer = 0;
         Debug.Log("out");
         enter = false;
-        
     }
 }
