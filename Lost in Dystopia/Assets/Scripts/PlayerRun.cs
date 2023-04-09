@@ -15,12 +15,13 @@ public class PlayerRun : MonoBehaviour
     float maxStamina;
     public float sValue;
 
-    public Slider staminaBar;
+    private Slider staminaBar;
 
     private Vector2 movement;
 
     private void Start()
     {
+        staminaBar = GameObject.FindGameObjectWithTag("StaminaSlider").GetComponent<Slider>();
         maxStamina = stamina;
         staminaBar.maxValue = maxStamina;
     }

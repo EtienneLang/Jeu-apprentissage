@@ -25,6 +25,7 @@ public class SceneSwitch : MonoBehaviour
             if (timer >= 5)
             {
                 SceneManager.LoadScene(2);
+                Destroy(gameObject);
             }
         }
     }
