@@ -8,7 +8,6 @@ public class Inventory : MonoBehaviour
     public GameObject[] slots;
     private void Start()
     {
-
         DontDestroyOnLoad(gameObject);
     }
 }

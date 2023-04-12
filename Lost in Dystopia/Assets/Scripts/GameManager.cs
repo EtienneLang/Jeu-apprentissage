@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public GameObject baseEnnemy;
     public GameObject key;
     public FloatingTextManager floatingTextManager;
+    public GameObject InventaireEtUI;
 
     private void Awake()
     {
@@ -20,18 +21,24 @@ public class GameManager : MonoBehaviour
         }
         instance = this;
         DontDestroyOnLoad(gameObject);
+        if (GameObject.Find("DONTDESTROY") == null) 
+        {
+            Instantiate(InventaireEtUI);
+        }
     }
 
     // Start is called before the first frame update
     void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         floatingTextManager = GameObject.FindGameObjectWithTag("TextManager").GetComponent<FloatingTextManager>();
     }
-
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-    
+        if (player == null)
+        {
+            player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        }
     }
 
     public static void ajouterCoins(int nbGoldCoins) 

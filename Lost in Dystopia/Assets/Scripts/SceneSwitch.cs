@@ -7,6 +7,7 @@ public class SceneSwitch : MonoBehaviour
 {
     float timer = 0;
     bool enter = false;
+ 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
