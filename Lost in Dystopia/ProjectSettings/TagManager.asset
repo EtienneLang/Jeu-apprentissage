@@ -12,6 +12,7 @@ TagManager:
   - Inventaire
   - StaminaSlider
   - TextManager
+  - HealthBar
   layers:
   - Default
   - TransparentFX

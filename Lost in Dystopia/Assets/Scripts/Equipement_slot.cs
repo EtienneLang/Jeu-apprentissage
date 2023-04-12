@@ -24,7 +24,6 @@ public class Equipement_slot : MonoBehaviour, IDropHandler
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(ts.Length);
         ts = GetComponentsInChildren<Transform>();
         if (ts.Length == 1 && gunSpawned)
         {

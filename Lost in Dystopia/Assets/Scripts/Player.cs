@@ -13,6 +13,7 @@ public class Player : Fighter
     {
         maxHealth = MAX_HEALTH;
         health = maxHealth;
+        HealtBar = GameObject.FindGameObjectWithTag("HealthBar").GetComponent<HealtBar>();
         HealtBar.SetMaxHealth(maxHealth);
     }
     

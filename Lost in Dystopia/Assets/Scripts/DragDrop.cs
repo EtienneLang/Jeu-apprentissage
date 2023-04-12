@@ -8,11 +8,9 @@ using UnityEngine.EventSystems;
 public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
     private CanvasGroup canvasGroup;
-    private RectTransform rectTransform;
     [HideInInspector] public Transform parentAfterDrag;
     private void Awake()
     {
-        rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
     }
     public void OnBeginDrag(PointerEventData eventData)
@@ -27,7 +25,8 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
 
     public void OnDrag(PointerEventData eventData)
     {
-        rectTransform.anchoredPosition += eventData.delta; ///canvas.scaleFactor;
+        transform.position = Input.mousePosition;
+       // rectTransform.anchoredPosition += eventData.delta; ///canvas.scaleFactor;
     }
 
     public void OnEndDrag(PointerEventData eventData)
