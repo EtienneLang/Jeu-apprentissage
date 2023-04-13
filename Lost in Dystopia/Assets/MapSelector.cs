@@ -8,6 +8,7 @@ public class MapSelector : Interaclable
 {
     private bool _MapAffiche;
     public GameObject MapUI;
+    private bool _MsgAffiche;
     private void Start()
     {
         _MapAffiche = false;
@@ -17,6 +18,13 @@ public class MapSelector : Interaclable
     {
         if (isInRange)
         {
+            if (!_MsgAffiche) 
+            {
+               GameManager.instance.ShowStillText("Press M to open the map", 25, Color.white, GameManager.instance.player.transform.position);
+                _MsgAffiche = true;
+            }
+
+
             if (Input.GetKeyDown(KeyCode.M))
             {
                 if (!_MapAffiche)
@@ -31,20 +39,11 @@ public class MapSelector : Interaclable
                 }
             }
         }
+        else if(_MsgAffiche) 
+            GameManager.instance.HideText();
+
     }
 
-    //protected new void OnTriggerEnter2D(Collider2D collision)
-    //{
-    //    if (collision.tag == "Player")
-    //    {
-    //        GameManager.instance.ShowStillText("Press M to open the map", 25, Color.white, GameManager.instance.player.transform.position);
-    //    }
-    //}
-
-    //protected new void OnTriggerExit2D(Collider2D collision)
-    //{
-    //    GameManager.instance.HideText();
-    //}
 
     public void villageSelect()
     {
