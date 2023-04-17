@@ -34,7 +34,6 @@ public class slot : MonoBehaviour, IDropHandler
     {
         foreach (Transform child in transform)
         {
-            Debug.Log("Entré");
             //sonDrop.Play();
             child.GetComponent<Drop>().SpawnDroppedItem();
             GameObject.Destroy(child.gameObject);
@@ -43,7 +42,6 @@ public class slot : MonoBehaviour, IDropHandler
 
     public void OnDrop(PointerEventData eventData)
     {
-        Debug.Log("OnDrop");
         if (eventData.pointerDrag != null)
         {
             if (transform.childCount == 0)

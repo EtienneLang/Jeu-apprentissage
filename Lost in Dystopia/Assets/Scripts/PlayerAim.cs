@@ -127,4 +127,15 @@ public class PlayerAim : MonoBehaviour
         Vector3 worldPosition = worldCamera.ScreenToWorldPoint(screenPosition);
         return worldPosition;
     }
+
+    public void ChangeGun(string gun)
+    {
+        if (gun == "")
+            Debug.Log("CHangé a Rien");
+        else if (gun == "AK")
+            Debug.Log("CHangé a AK");
+        else if (gun == "Glock")
+            Debug.Log("CHangé a Glock");
+    }
+
 }

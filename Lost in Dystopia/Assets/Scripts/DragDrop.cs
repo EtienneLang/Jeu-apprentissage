@@ -15,7 +15,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     }
     public void OnBeginDrag(PointerEventData eventData)
     {
-        Debug.Log("OnBeginDrage");
+
         canvasGroup.blocksRaycasts = false;
         canvasGroup.alpha = 0.6f;
         parentAfterDrag = transform.parent;
@@ -31,7 +31,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        Debug.Log("OnEndDrag");
+
         canvasGroup.blocksRaycasts = true;
         canvasGroup.alpha = 1f;
         transform.SetParent(parentAfterDrag);
@@ -41,6 +41,6 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
 
     public void OnPointerDown(PointerEventData enventData)
     {
-        Debug.Log("Onpointerdown");
+        
     }
 }
