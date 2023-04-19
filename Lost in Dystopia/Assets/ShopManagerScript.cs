@@ -32,10 +32,6 @@ public class ShopManagerScript : MonoBehaviour
         shopItems[1,1] = 20;
         shopItems[1,2] = 30;
         shopItems[1,3] = 40;
-
-        
-
-
     }
 
     // Update is called once per frame

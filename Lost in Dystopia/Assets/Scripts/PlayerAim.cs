@@ -22,16 +22,17 @@ public class PlayerAim : MonoBehaviour
     public Rigidbody2D rb;
 
     public AudioSource gunSound;
-
+    private bool firingMode;
     Vector2 movement;
 
     public bool Envent { get; private set; }
 
     private void Awake()
     {
+        firingMode = Input.GetMouseButtonDown(0);
         player = GameObject.Find("Player");
         //aimTransform = transform.Find("AK_Prefab");
-        aimTransform = transform.Find("Aim");
+        aimTransform = transform.Find("Glock_Prefab");
         aimAnimator = aimTransform.GetComponent<Animator>();
         aimGunEndPointTransform = aimTransform.Find("GunEndPointPosition");
     }
@@ -63,7 +64,15 @@ public class PlayerAim : MonoBehaviour
                 timer = 0;
             }
         }
-        if (Input.GetMouseButtonDown(0) && canFire)
+        if (aimTransform == transform.Find("Glock_Prefab")) 
+        {
+            firingMode = Input.GetMouseButtonDown(0);
+        }
+        else if (aimTransform == transform.Find("AK_Prefab"))
+        {
+            firingMode = Input.GetMouseButton(0);
+        }
+        if (firingMode && canFire)
         {
             if (EventSystem.current.IsPointerOverGameObject()) //Pour ne pas tirer quand curseur sur UI
                 return;
@@ -79,6 +88,7 @@ public class PlayerAim : MonoBehaviour
     /// </summary>
     private void HandleAiming()
     {
+
         Vector3 mousePosition = GetMouseWorldPosition();
 
         Vector3 aimDirection = (mousePosition - transform.position).normalized;
@@ -131,11 +141,30 @@ public class PlayerAim : MonoBehaviour
     public void ChangeGun(string gun)
     {
         if (gun == "")
+        {
+            //Pour qu'on ne puisse pas tiré sans arme
+            timeBetweenFiring = 100000000000;
             Debug.Log("CHangé a Rien");
+        }
         else if (gun == "AK")
+        {
+            aimTransform = transform.Find("AK_Prefab");
+            aimAnimator = aimTransform.GetComponent<Animator>();
+            aimGunEndPointTransform = aimTransform.Find("GunEndPointPositionAK");
+            bulletTransform = aimGunEndPointTransform;
+            timeBetweenFiring = 0.1f;
             Debug.Log("CHangé a AK");
+        }
         else if (gun == "Glock")
+        {
+            aimTransform = transform.Find("Glock_Prefab");
+            aimAnimator = aimTransform.GetComponent<Animator>();
+            aimGunEndPointTransform = aimTransform.Find("GunEndPointPositionGlock");
+            bulletTransform = aimGunEndPointTransform;
+            timeBetweenFiring = 0.5f;
             Debug.Log("CHangé a Glock");
+        }
+            
     }
 
 }
