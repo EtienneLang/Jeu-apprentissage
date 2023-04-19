@@ -27,14 +27,16 @@ public class PlayerAim : MonoBehaviour
 
     public bool Envent { get; private set; }
 
-    private void Awake()
+    private void Start()
     {
+        Debug.Log("playerLoad");
         firingMode = Input.GetMouseButtonDown(0);
         player = GameObject.Find("Player");
         //aimTransform = transform.Find("AK_Prefab");
         aimTransform = transform.Find("Glock_Prefab");
         aimAnimator = aimTransform.GetComponent<Animator>();
-        aimGunEndPointTransform = aimTransform.Find("GunEndPointPosition");
+        aimGunEndPointTransform = aimTransform.Find("GunEndPointPositionGlock");
+        bulletTransform = aimGunEndPointTransform;
     }
     // Update is called once per frame
     void Update()
