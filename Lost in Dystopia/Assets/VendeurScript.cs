@@ -32,6 +32,10 @@ public class VendeurScript : Interaclable
                 }
             }
         }
+        else if(_shopAffiche && !isInRange)
+        {
+            ShopUI.SetActive(false);
+        }
         
     }
     //NE MARCHE PAS JE NE SAIS PAS POURQUOI

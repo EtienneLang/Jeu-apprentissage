@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Jobs;
+using UnityEngine.SceneManagement;
 
 public class Equipement_slot : MonoBehaviour, IDropHandler
 {
@@ -14,21 +15,21 @@ public class Equipement_slot : MonoBehaviour, IDropHandler
     private Transform aimTransform;
     private Transform[] ts;
     private PlayerAim playerAimScript;
-    private bool gunSpawned = true;
+    private bool gunSpawned;
+    private Scene scene;
+    private string sceneName;
+
     // Start is called before the first frame update
     void Start()
     {
-        ts = GetComponentsInChildren<Transform>();
-        player = GameObject.FindGameObjectWithTag("Player");
-        aimTransform = player.transform.Find("Aim");
-        playerAimScript = player.GetComponent<PlayerAim>();
-        Instantiate(glock_UI, transform, false);
+        LoadAllObjectForScript();
     }
 
     // Update is called once per frame
     void Update()
     {
         ts = GetComponentsInChildren<Transform>();
+        Debug.Log(ts.Length);
         if (ts.Length == 1 && gunSpawned)
         {
             gunSpawned = false;
@@ -37,27 +38,28 @@ public class Equipement_slot : MonoBehaviour, IDropHandler
                 player.transform.GetChild(i).gameObject.SetActive(false);
             }
             playerAimScript.ChangeGun("");
-            playerAimScript.canFire = false;
 
         }
         else
-        {
             VerifierArme();
-        } 
+
+        //On reload le script si on change de scene
+        if (scene.name != sceneName)
+            LoadAllObjectForScript();
     }
     private void VerifierArme()
     {
         if (!gunSpawned)
         {
-           // Debug.Log(player.transform.GetChild(0).gameObject.activeInHierarchy);
-            if (ts[0].transform.Find("Glock_Inventory(Clone)"))
+            // Debug.Log(player.transform.GetChild(0).gameObject.activeInHierarchy);
+            if (ts[0].transform.Find("Glock_Inventory(Clone)") || ts[0].transform.Find("Glock_Inventory"))
             {
                 DisableAllGunsExept(0);
                 player.transform.GetChild(0).gameObject.SetActive(true);
                 playerAimScript.ChangeGun("Glock");
-                gunSpawned =true;
+                gunSpawned = true;
             }
-            else if (ts[0].transform.Find("Ak_Inventory(Clone)"))
+            else if (ts[0].transform.Find("Ak_Inventory(Clone)") || ts[0].transform.Find("Ak_Inventory"))
             {
                 DisableAllGunsExept(1);
                 player.transform.GetChild(1).gameObject.SetActive(true);
@@ -67,7 +69,7 @@ public class Equipement_slot : MonoBehaviour, IDropHandler
         }
 
 
-        
+
     }
     public void OnDrop(PointerEventData eventData)
     {
@@ -83,7 +85,7 @@ public class Equipement_slot : MonoBehaviour, IDropHandler
         }
     }
 
-    public void DisableAllGunsExept(int indice) 
+    public void DisableAllGunsExept(int indice)
     {
         for (int i = 0; i < 2; i++)
         {
@@ -93,4 +95,13 @@ public class Equipement_slot : MonoBehaviour, IDropHandler
             }
         }
     }
+
+    private void LoadAllObjectForScript() {
+        ts = GetComponentsInChildren<Transform>();
+        player = GameObject.FindGameObjectWithTag("Player");
+        playerAimScript = player.GetComponent<PlayerAim>();
+        scene = SceneManager.GetActiveScene();
+        sceneName = scene.name;
+    }
+
 }

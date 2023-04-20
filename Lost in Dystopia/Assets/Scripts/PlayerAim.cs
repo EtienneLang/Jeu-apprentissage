@@ -33,9 +33,12 @@ public class PlayerAim : MonoBehaviour
         firingMode = Input.GetMouseButtonDown(0);
         player = GameObject.Find("Player");
         //aimTransform = transform.Find("AK_Prefab");
-        aimTransform = transform.Find("Glock_Prefab");
-        aimAnimator = aimTransform.GetComponent<Animator>();
-        aimGunEndPointTransform = aimTransform.Find("GunEndPointPositionGlock");
+        //aimTransform = transform.Find("Glock_Prefab");
+        aimTransform = null;
+       // aimAnimator = aimTransform.GetComponent<Animator>();
+        aimAnimator = null;
+        //aimGunEndPointTransform = aimTransform.Find("GunEndPointPositionGlock");
+        aimGunEndPointTransform = null;
         bulletTransform = aimGunEndPointTransform;
     }
     // Update is called once per frame
