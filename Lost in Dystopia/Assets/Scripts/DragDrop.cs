@@ -19,7 +19,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
         canvasGroup.blocksRaycasts = false;
         canvasGroup.alpha = 0.6f;
         parentAfterDrag = transform.parent;
-        transform.SetParent(transform.root);
+        transform.SetParent(GameObject.Find("UI").transform);
         transform.SetAsLastSibling();
     }
 
