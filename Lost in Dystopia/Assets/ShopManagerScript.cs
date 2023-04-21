@@ -7,8 +7,8 @@ using UnityEngine.UI;
 public class ShopManagerScript : MonoBehaviour
 {
 
-    public int[,] shopItems = new int[2,4];
-    public GameObject[] itemsPrefabs = new GameObject[4];
+    public int[,] shopItems = new int[2,5];
+    public GameObject[] itemsPrefabs = new GameObject[5];
     public Text coinsTxt;
     public GameObject player;
     private int playerCoins;
@@ -26,12 +26,14 @@ public class ShopManagerScript : MonoBehaviour
         shopItems[0,1] = 2;
         shopItems[0,2] = 3;
         shopItems[0,3] = 4;
+        shopItems[0,4] = 5;
 
         //Prices
         shopItems[1,0] = 10;
         shopItems[1,1] = 20;
-        shopItems[1,2] = 30;
-        shopItems[1,3] = 40;
+        shopItems[1,2] = 100;
+        shopItems[1,3] = 20;
+        shopItems[1,4] = 80;
     }
 
     // Update is called once per frame

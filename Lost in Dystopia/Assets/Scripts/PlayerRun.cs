@@ -51,7 +51,7 @@ public class PlayerRun : MonoBehaviour
     /// <returns></returns>
     private float PlayerSprint(float speed)
     {
-
+        Debug.Log(staminaBar.value);
         if (Input.GetKey(KeyCode.LeftShift) && staminaBar.value != 0)
         {
             speed = 2;
