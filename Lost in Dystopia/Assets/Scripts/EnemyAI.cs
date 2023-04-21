@@ -59,14 +59,6 @@ public class EnemyAI : MonoBehaviour
             {
                 patrol.targets[i] = player.transform;
             }
-            
-        }
-        if (_targetIsSeen)
-        {
-            Vector2 direction = ((Vector2)_path.vectorPath[_currentWaypoint] - _rb.position).normalized;
-            Vector2 force = direction * speed * Time.deltaTime;
-            _rb.AddForce(force);
-        }
-        
+        }  
     }
 }

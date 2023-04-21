@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: -3863217387369922948}
   - component: {fileID: 1941281680367348627}
   - component: {fileID: -9170761484648182319}
+  - component: {fileID: -5268446610843192742}
   m_Layer: 5
   m_Name: Med_Inventory
   m_TagString: Untagged
@@ -123,7 +124,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3247098338012557991}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: -5268446610843192742}
+        m_TargetAssemblyTypeName: Usable, Assembly-CSharp
+        m_MethodName: Heal
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &-3863217387369922948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -137,7 +150,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 452338871397030161, guid: af079ab723207ae4f9015690f620f758, type: 3}
-  items: {fileID: 0}
   dropSound: {fileID: 0}
   clip: {fileID: 0}
 --- !u!114 &1941281680367348627
@@ -165,3 +177,15 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &-5268446610843192742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2196391516951872482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34a8f3f3155626b4ca9738577f21757a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

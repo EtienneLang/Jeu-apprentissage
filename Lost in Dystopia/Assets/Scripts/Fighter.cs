@@ -12,7 +12,6 @@ namespace Assets.Scripts
         protected virtual void ReceiveDamage(Damage dmg)
         {
             health -= dmg.nbHitPoints;
-            Debug.Log("sang spawn");
             if (health <= 0)
             {
                 health = 0;

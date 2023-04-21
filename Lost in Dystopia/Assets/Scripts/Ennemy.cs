@@ -31,7 +31,6 @@ public class Ennemy : Fighter
     }
     protected override void Death()
     {
-        GameManager.SpawnMedkit(transform);
         GameManager.ajouterCoins(goldCoins);
         base.Death();
     }
