@@ -1483,6 +1483,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5523734837743349992}
   - component: {fileID: 5523734837743349995}
+  - component: {fileID: 1789531107111671877}
   m_Layer: 5
   m_Name: Inventaire
   m_TagString: Inventaire
@@ -1554,6 +1555,23 @@ MonoBehaviour:
   - {fileID: 3534567619917184923}
   - {fileID: 3534567619858050628}
   - {fileID: 3534567618827393057}
+  Ui_inventory: {fileID: 0}
+--- !u!114 &1789531107111671877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5523734837743349994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 449c0e21c31e30c40b5300780222230e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coins: 0
+  inventaire: {fileID: 5523734837743349995}
+  items: []
+  Ui_inventaire: {fileID: 5523734837342922726}
 --- !u!1 &5523734837781348993
 GameObject:
   m_ObjectHideFlags: 0
