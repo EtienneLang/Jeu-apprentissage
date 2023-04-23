@@ -48,7 +48,7 @@ public class SaveData : MonoBehaviour
         string inventoryData = File.ReadAllText(filePath);
 
         string[] vectLignes = inventoryData.Split('\n');
-        for (int i = 1; i < vectLignes.Length-1; i++)
+        for (int i = 0; i < vectLignes.Length-1; i++)
         {
             string[] vectContenuItem = vectLignes[i].Split(';');
             int idItem = Convert.ToInt32(vectContenuItem[0]);
