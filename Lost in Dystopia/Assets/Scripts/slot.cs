@@ -36,7 +36,8 @@ public class slot : MonoBehaviour, IDropHandler
         {
             //sonDrop.Play();
             child.GetComponent<Drop>().SpawnDroppedItem();
-            GameObject.Destroy(child.gameObject);
+            inventory.items.Remove(child.gameObject.GetComponent<Item>());
+            Destroy(child.gameObject);
         }
     }
 

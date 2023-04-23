@@ -53,7 +53,7 @@ public class ShopManagerScript : MonoBehaviour
 
                     Debug.Log("rammassé");
                     inventory.isFull[i] = true;
-                    Instantiate(itemsPrefabs[buttonRef.GetComponent<ButtonInfo>().ItemID], inventory.slots[i].transform, false);
+                    inventory.items.Add(Instantiate(itemsPrefabs[buttonRef.GetComponent<ButtonInfo>().ItemID], inventory.slots[i].transform, false).GetComponent<Item>());
                     break;
                 }
             }

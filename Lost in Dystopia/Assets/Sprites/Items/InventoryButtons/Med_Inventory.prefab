@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 1941281680367348627}
   - component: {fileID: -9170761484648182319}
   - component: {fileID: -5268446610843192742}
+  - component: {fileID: 4683198508466681871}
   m_Layer: 5
   m_Name: Med_Inventory
   m_TagString: Untagged
@@ -189,3 +190,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34a8f3f3155626b4ca9738577f21757a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4683198508466681871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2196391516951872482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5f854eccbcf2e14baa7e6ec669cda7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nom: med_item
+  prefab: {fileID: 2196391516951872482}
+  id: 4
+  parentSlot: 0

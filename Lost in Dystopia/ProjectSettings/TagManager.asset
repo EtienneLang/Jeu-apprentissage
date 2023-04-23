@@ -13,6 +13,7 @@ TagManager:
   - StaminaSlider
   - TextManager
   - HealthBar
+  - UI
   layers:
   - Default
   - TransparentFX

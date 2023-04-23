@@ -564,7 +564,7 @@ GameObject:
   - component: {fileID: 5523734837342922727}
   m_Layer: 5
   m_Name: UI
-  m_TagString: Untagged
+  m_TagString: UI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1555,7 +1555,7 @@ MonoBehaviour:
   - {fileID: 3534567619917184923}
   - {fileID: 3534567619858050628}
   - {fileID: 3534567618827393057}
-  Ui_inventory: {fileID: 0}
+  items: []
 --- !u!114 &1789531107111671877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1570,8 +1570,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coins: 0
   inventaire: {fileID: 5523734837743349995}
-  items: []
-  Ui_inventaire: {fileID: 5523734837342922726}
+  prefabs_item_List:
+  - {fileID: 2196391516951872482, guid: dc34869534cde3843b8b082b2a9772d6, type: 3}
+  - {fileID: 2196391516951872482, guid: 6038058e477f9d544a9140a8aa2dbc82, type: 3}
+  - {fileID: 2196391516951872482, guid: 9656ffb5337f23844beea43d1cce8e34, type: 3}
+  - {fileID: 2196391516951872482, guid: bb554dd849fc24440bd11163bbe0d7bb, type: 3}
+  - {fileID: 2196391516951872482, guid: 601ad30ab77a56c43909ed53fc7954a0, type: 3}
+  - {fileID: 2196391516951872482, guid: a16202e66ddde4e48951a0aa8fdc3b47, type: 3}
+  - {fileID: 2196391516951872482, guid: 77022b666402aed489fdd492fe7b6bfe, type: 3}
+  - {fileID: 2196391516951872482, guid: 8a746848643c2b840bfd8f97e0e215a5, type: 3}
 --- !u!1 &5523734837781348993
 GameObject:
   m_ObjectHideFlags: 0

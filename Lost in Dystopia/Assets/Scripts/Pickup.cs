@@ -24,7 +24,7 @@ public class Pickup : MonoBehaviour
                     sonRamasse.pitch = Random.Range(0.8f, 1.2f);
                     sonRamasse.Play();
                     inventory.isFull[i] = true;
-                    Instantiate(itemButton, inventory.slots[i].transform,false);
+                    inventory.items.Add(Instantiate(itemButton, inventory.slots[i].transform, false).GetComponent<Item>());
                     Destroy(gameObject);
                     break;
                 }
