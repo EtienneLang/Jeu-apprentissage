@@ -32,12 +32,8 @@ public class PlayerAim : MonoBehaviour
         Debug.Log("playerLoad");
         firingMode = Input.GetMouseButtonDown(0);
         player = GameObject.Find("Player");
-        //aimTransform = transform.Find("AK_Prefab");
-        //aimTransform = transform.Find("Glock_Prefab");
         aimTransform = null;
-       // aimAnimator = aimTransform.GetComponent<Animator>();
         aimAnimator = null;
-        //aimGunEndPointTransform = aimTransform.Find("GunEndPointPositionGlock");
         aimGunEndPointTransform = null;
         bulletTransform = aimGunEndPointTransform;
     }
