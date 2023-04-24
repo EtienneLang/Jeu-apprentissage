@@ -16,17 +16,6 @@ public class SaveData : MonoBehaviour
         UI_inventaire = GameObject.FindGameObjectWithTag("UI");
         inventaire = GameObject.FindGameObjectWithTag("Inventaire").GetComponent<Inventory>();
     }
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.F5))
-        {
-            SaveToJson();
-        }
-        if (Input.GetKeyDown(KeyCode.F6))
-        {
-            LoadFromJson();
-        }
-    }
     public void SaveToJson()
     {
         

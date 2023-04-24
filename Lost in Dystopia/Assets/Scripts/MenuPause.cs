@@ -9,6 +9,11 @@ public class MenuPause : MonoBehaviour
 
     public static bool JeuEnPause = false;
     public GameObject MenuPauseUI;
+    public SaveData inventaireSaveData;
+    private void Start()
+    {
+        inventaireSaveData = GameObject.FindGameObjectWithTag("Inventaire").GetComponent<SaveData>();
+    }
 
     // Update is called once per frame
     void Update()
