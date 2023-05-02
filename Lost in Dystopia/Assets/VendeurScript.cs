@@ -5,14 +5,17 @@ using UnityEngine;
 public class VendeurScript : Interaclable
 {
     // Start is called before the first frame update
-    private bool _shopAffiche;
-    public GameObject ShopUI;
+    private bool _shopBtnAffiche;
+    private bool _shopSellAffiche;
+    public GameObject ShopBtnUI;
+    public GameObject ShopBuyUI;
 
 
     private void Start()
     {
-        _shopAffiche = false;
-        ShopUI.SetActive(false);
+        _shopBtnAffiche = false;
+        _shopSellAffiche = false;
+        ShopBtnUI.SetActive(false);
     }
     private void Update()
     {
@@ -20,22 +23,39 @@ public class VendeurScript : Interaclable
         {
             if (Input.GetKeyDown(KeyCode.Q))
             {
-                if (!_shopAffiche)
+                if (!_shopBtnAffiche)
                 {
-                    ShopUI.SetActive(true);
-                    _shopAffiche = true;
+                    ShopBtnUI.SetActive(true);
+                    _shopBtnAffiche = true;
                 }
                 else
                 {
-                    ShopUI.SetActive(false);
-                    _shopAffiche = false;
+                    ShopBtnUI.SetActive(false);
+                    _shopBtnAffiche = false;
                 }
             }
         }
-        else if(_shopAffiche && !isInRange)
+        else if(_shopBtnAffiche && !isInRange)
         {
-            ShopUI.SetActive(false);
+            ShopBtnUI.SetActive(false);
         }
+        
+    }
+    public void ClickSell()
+    {
+        if (!_shopSellAffiche)
+        {
+            ShopBuyUI.SetActive(true);
+            ShopBtnUI.transform.position = new Vector2 (Screen.width/2-300, Screen.height/2);    
+            _shopSellAffiche = true;
+        }
+        else
+        {
+            ShopBuyUI.SetActive(false);
+            ShopBtnUI.transform.position = new Vector2(Screen.width / 2, Screen.height / 2);
+            _shopSellAffiche = false;
+        }
+            
         
     }
     //NE MARCHE PAS JE NE SAIS PAS POURQUOI
