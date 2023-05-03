@@ -7,14 +7,18 @@ public class VendeurScript : Interaclable
     // Start is called before the first frame update
     private bool _shopBtnAffiche;
     private bool _shopSellAffiche;
+    private bool _shopBuyAffiche;
     public GameObject ShopBtnUI;
     public GameObject ShopBuyUI;
+    public GameObject ShopSellUI;
+    public ShopSell shopSell;
 
 
     private void Start()
     {
         _shopBtnAffiche = false;
         _shopSellAffiche = false;
+        _shopBuyAffiche = false;
         ShopBtnUI.SetActive(false);
     }
     private void Update()
@@ -30,33 +34,60 @@ public class VendeurScript : Interaclable
                 }
                 else
                 {
+                    ShopBuyUI.SetActive(false);
                     ShopBtnUI.SetActive(false);
+                    ShopSellUI.SetActive(false);
                     _shopBtnAffiche = false;
+                    ShopBtnUI.transform.position = new Vector2(Screen.width / 2, Screen.height / 2);
                 }
             }
         }
         else if(_shopBtnAffiche && !isInRange)
         {
             ShopBtnUI.SetActive(false);
+            ShopBuyUI.SetActive(false);
+            ShopSellUI.SetActive(false);
+            ShopBtnUI.transform.position = new Vector2(Screen.width / 2, Screen.height / 2);
         }
-        
+
+    }
+    public void ClickBuy()
+    {
+        if (!_shopBuyAffiche)
+        {
+            ShopBuyUI.SetActive(true);
+            ShopSellUI.SetActive(false);
+            ShopBtnUI.transform.position = new Vector2 (Screen.width/2-300, Screen.height/2);
+            _shopBuyAffiche = true;
+        }
+        else
+        {
+            ShopBuyUI.SetActive(false);
+            ShopSellUI.SetActive(false);
+            ShopBtnUI.transform.position = new Vector2(Screen.width / 2, Screen.height / 2);
+            _shopBuyAffiche = false;
+        }
+        _shopSellAffiche = false;
     }
     public void ClickSell()
     {
         if (!_shopSellAffiche)
         {
-            ShopBuyUI.SetActive(true);
-            ShopBtnUI.transform.position = new Vector2 (Screen.width/2-300, Screen.height/2);    
+            
+            ShopSellUI.SetActive(true);
+            ShopBuyUI.SetActive(false);
+            ShopBtnUI.transform.position = new Vector2(Screen.width / 2 - 300, Screen.height / 2);
             _shopSellAffiche = true;
         }
         else
         {
-            ShopBuyUI.SetActive(false);
+            ShopSellUI.SetActive(false);
+            ShopBuyUI.SetActive(false); 
             ShopBtnUI.transform.position = new Vector2(Screen.width / 2, Screen.height / 2);
             _shopSellAffiche = false;
         }
-            
-        
+        shopSell.RefreshSellScroller();
+        _shopBuyAffiche = false;
     }
     //NE MARCHE PAS JE NE SAIS PAS POURQUOI
     //protected new void OnTriggerEnter2D(Collider2D collision)

@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class ShopManagerScript : MonoBehaviour
 {
 
-    public int[,] shopItems = new int[2,5];
+    public int[,] shopItems = new int[3,5];
     public GameObject[] itemsPrefabs = new GameObject[5];
     public Text coinsTxt;
     public GameObject player;
@@ -34,6 +34,13 @@ public class ShopManagerScript : MonoBehaviour
         shopItems[1,2] = 100;
         shopItems[1,3] = 20;
         shopItems[1,4] = 80;
+
+        //SellPrice
+        shopItems[2, 0] = 7;
+        shopItems[2, 1] = 15;
+        shopItems[2, 2] = 60;
+        shopItems[2, 3] = 15;
+        shopItems[2, 4] = 40;
     }
 
     // Update is called once per frame
@@ -58,5 +65,25 @@ public class ShopManagerScript : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void Sell()
+    {
+        GameObject buttonRef = GameObject.FindGameObjectWithTag("Event").GetComponent<EventSystem>().currentSelectedGameObject;
+        playerCoins += shopItems[2, buttonRef.GetComponent<ButtonInfo>().ItemID];
+        coinsTxt.text = playerCoins.ToString();
+
+        for (int i = 0; i < inventory.slots.Length; i++)
+        {
+            if (inventory.items[i] == shopItems[0, buttonRef.GetComponent<ButtonInfo>().ItemID])
+            {
+
+                Debug.Log("rammassé");
+                inventory.isFull[i] = true;
+                inventory.items.Add(Instantiate(itemsPrefabs[buttonRef.GetComponent<ButtonInfo>().ItemID], inventory.slots[i].transform, false).GetComponent<Item>());
+                break;
+            }
+        }
+        
     }
 }
