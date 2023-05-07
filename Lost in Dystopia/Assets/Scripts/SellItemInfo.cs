@@ -10,13 +10,13 @@ public class SellItemInfo : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        shop = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        //shop = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
     }
 
     // Update is called once per frame
     public void SellClickInShop() 
     { 
-        player.
+        //player.
     }
 
 

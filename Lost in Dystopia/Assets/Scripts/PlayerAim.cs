@@ -17,6 +17,10 @@ public class PlayerAim : MonoBehaviour
     public bool canFire;
     private float timer;
     public float timeBetweenFiring;
+    public int nbAmmo;
+    public int maxAmmo;
+    private float reloadTime;
+    private bool isReloading;
 
     private float movement_speed = 1f;
     public Rigidbody2D rb;
@@ -36,17 +40,33 @@ public class PlayerAim : MonoBehaviour
         aimAnimator = null;
         aimGunEndPointTransform = null;
         bulletTransform = aimGunEndPointTransform;
+        isReloading = false;
     }
     // Update is called once per frame
     void Update()
     {
-        
-            HandleAiming();
-            
-            movement.x = Input.GetAxisRaw("Horizontal");
-            movement.y = Input.GetAxisRaw("Vertical");
-        
-        
+        HandleAiming();
+        movement.x = Input.GetAxisRaw("Horizontal");
+        movement.y = Input.GetAxisRaw("Vertical");
+        if (Input.GetKeyDown(KeyCode.R) && nbAmmo < maxAmmo)
+        {
+            Reload();
+        }
+    }
+
+    private void Reload()
+    {
+        if (isReloading)
+            return;
+        isReloading = true;
+        StartCoroutine(ReloadCoroutine());
+    }
+
+    private IEnumerator ReloadCoroutine()
+    {
+        yield return new WaitForSeconds(reloadTime);
+        nbAmmo = maxAmmo;
+        isReloading = false;
     }
 
     private void FixedUpdate()
@@ -55,6 +75,10 @@ public class PlayerAim : MonoBehaviour
     }
     private void HandleShooting()
     {
+        if (isReloading)
+            return;
+        if (nbAmmo == 0)
+            Reload();
         Vector3 mousePosition = GetMouseWorldPosition();
         if (!canFire)
         {
@@ -77,6 +101,7 @@ public class PlayerAim : MonoBehaviour
         {
             if (EventSystem.current.IsPointerOverGameObject()) //Pour ne pas tirer quand curseur sur UI
                 return;
+            nbAmmo--;
             canFire = false;
             gunSound.pitch = UnityEngine.Random.Range(1.5f, 2.2f);
             gunSound.Play();
@@ -145,6 +170,8 @@ public class PlayerAim : MonoBehaviour
         {
             //Pour qu'on ne puisse pas tiré sans arme
             timeBetweenFiring = 100000000000;
+            maxAmmo = 0;
+            nbAmmo = maxAmmo;
             Debug.Log("CHangé a Rien");
         }
         else if (gun == "AK")
@@ -154,6 +181,9 @@ public class PlayerAim : MonoBehaviour
             aimGunEndPointTransform = aimTransform.Find("GunEndPointPositionAK");
             bulletTransform = aimGunEndPointTransform;
             timeBetweenFiring = 0.1f;
+            maxAmmo = 40;
+            nbAmmo = maxAmmo;
+            reloadTime = 3f;
             Debug.Log("CHangé a AK");
         }
         else if (gun == "Glock")
@@ -163,6 +193,9 @@ public class PlayerAim : MonoBehaviour
             aimGunEndPointTransform = aimTransform.Find("GunEndPointPositionGlock");
             bulletTransform = aimGunEndPointTransform;
             timeBetweenFiring = 0.5f;
+            maxAmmo = 15;
+            nbAmmo = maxAmmo;
+            reloadTime = 2f;
             Debug.Log("CHangé a Glock");
         }
             

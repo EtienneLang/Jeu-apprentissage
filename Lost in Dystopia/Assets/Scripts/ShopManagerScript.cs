@@ -75,14 +75,14 @@ public class ShopManagerScript : MonoBehaviour
 
         for (int i = 0; i < inventory.slots.Length; i++)
         {
-            if (inventory.items[i] == shopItems[0, buttonRef.GetComponent<ButtonInfo>().ItemID])
-            {
+            //if (inventory.items[i] == shopItems[0, buttonRef.GetComponent<ButtonInfo>().ItemID])
+            //{
 
-                Debug.Log("rammassé");
-                inventory.isFull[i] = true;
-                inventory.items.Add(Instantiate(itemsPrefabs[buttonRef.GetComponent<ButtonInfo>().ItemID], inventory.slots[i].transform, false).GetComponent<Item>());
-                break;
-            }
+            //    Debug.Log("rammassé");
+            //    inventory.isFull[i] = true;
+            //    inventory.items.Add(Instantiate(itemsPrefabs[buttonRef.GetComponent<ButtonInfo>().ItemID], inventory.slots[i].transform, false).GetComponent<Item>());
+            //    break;
+            //}
         }
         
     }
