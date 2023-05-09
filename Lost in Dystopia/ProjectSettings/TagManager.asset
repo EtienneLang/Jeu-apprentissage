@@ -15,6 +15,7 @@ TagManager:
   - HealthBar
   - UI
   - MenuPause
+  - ShopManager
   layers:
   - Default
   - TransparentFX

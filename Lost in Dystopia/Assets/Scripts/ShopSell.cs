@@ -8,17 +8,21 @@ using UnityEngine.UIElements;
 public class ShopSell : MonoBehaviour
 {
     private VerticalLayoutGroup itemListScoller;
-    private List<Item> itemList;
+    private Inventory inventaire;
     public GameObject medSellButton;
     // Start is called before the first frame update
     void Start()
     {
-        itemList = GameObject.FindGameObjectWithTag("Inventaire").GetComponent<Inventory>().items;
+        inventaire = GameObject.FindGameObjectWithTag("Inventaire").GetComponent<Inventory>();
         itemListScoller = GameObject.Find("SellItemPanel").GetComponent<VerticalLayoutGroup>();
+    }
+    private void Update()
+    {
+        Debug.Log(inventaire.items.Count);
     }
     public void RefreshSellScroller()
     {
-        foreach (Item item in itemList) 
+        foreach (Item item in inventaire.items) 
         {
             if (item.nom == "med_item") 
             {

@@ -22,11 +22,11 @@ public class ShopManagerScript : MonoBehaviour
         inventory = GameObject.FindGameObjectWithTag("Inventaire").GetComponent<Inventory>();
 
         //Id's
-        shopItems[0,0] = 1;
-        shopItems[0,1] = 2;
-        shopItems[0,2] = 3;
-        shopItems[0,3] = 4;
-        shopItems[0,4] = 5;
+        shopItems[0,0] = 1; //Med
+        shopItems[0,1] = 2; //Key
+        shopItems[0,2] = 3; //AK
+        shopItems[0,3] = 4; //Pils
+        shopItems[0,4] = 5; //Glock
 
         //Prices
         shopItems[1,0] = 10;
@@ -57,7 +57,6 @@ public class ShopManagerScript : MonoBehaviour
             {
                 if (inventory.isFull[i] == false)
                 {
-
                     Debug.Log("rammassé");
                     inventory.isFull[i] = true;
                     inventory.items.Add(Instantiate(itemsPrefabs[buttonRef.GetComponent<ButtonInfo>().ItemID], inventory.slots[i].transform, false).GetComponent<Item>());
@@ -72,18 +71,15 @@ public class ShopManagerScript : MonoBehaviour
         GameObject buttonRef = GameObject.FindGameObjectWithTag("Event").GetComponent<EventSystem>().currentSelectedGameObject;
         playerCoins += shopItems[2, buttonRef.GetComponent<ButtonInfo>().ItemID];
         coinsTxt.text = playerCoins.ToString();
-
-        for (int i = 0; i < inventory.slots.Length; i++)
+        int i = 0;
+        bool found = false;
+        while (i < inventory.items.Count || !false)
         {
-            //if (inventory.items[i] == shopItems[0, buttonRef.GetComponent<ButtonInfo>().ItemID])
-            //{
-
-            //    Debug.Log("rammassé");
-            //    inventory.isFull[i] = true;
-            //    inventory.items.Add(Instantiate(itemsPrefabs[buttonRef.GetComponent<ButtonInfo>().ItemID], inventory.slots[i].transform, false).GetComponent<Item>());
-            //    break;
-            //}
+            if (inventory.items[i].id == buttonRef.GetComponent<ButtonInfo>().ItemID)
+            {
+                playerCoins += shopItems[2, buttonRef.GetComponent<ButtonInfo>().ItemID];
+                inventory.items.Remove(inventory.items[i]);
+            } 
         }
-        
     }
 }

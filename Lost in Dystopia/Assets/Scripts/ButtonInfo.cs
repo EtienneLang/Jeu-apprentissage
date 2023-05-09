@@ -8,8 +8,10 @@ public class ButtonInfo : MonoBehaviour
     public int ItemID;
     public Text priceTxt;
     public GameObject ShopManager;
-
-
+    private void Start()
+    {
+        ShopManager = GameObject.FindGameObjectWithTag("ShopManager");
+    }
     // Update is called once per frame
     void Update()
     {
