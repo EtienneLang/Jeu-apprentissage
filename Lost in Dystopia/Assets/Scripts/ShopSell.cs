@@ -18,7 +18,7 @@ public class ShopSell : MonoBehaviour
     }
     private void Update()
     {
-        Debug.Log(inventaire.items.Count);
+//        Debug.Log(inventaire.items.Count);
     }
     public void RefreshSellScroller()
     {

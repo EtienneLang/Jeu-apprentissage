@@ -16,6 +16,7 @@ TagManager:
   - UI
   - MenuPause
   - ShopManager
+  - Ground
   layers:
   - Default
   - TransparentFX

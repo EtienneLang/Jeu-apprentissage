@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,16 +15,19 @@ public class PlayerRun : MonoBehaviour
     public float stamina;
     float maxStamina;
     public float sValue;
-
+    public AudioSource footStepGrass;
+    public AudioSource footStepConcrete;
+    private Collider2D footCollider;
     private Slider staminaBar;
-
+    private string nameGround;
     private Vector2 movement;
-
+    private float timer;
     private void Start()
     {
         staminaBar = GameObject.FindGameObjectWithTag("StaminaSlider").GetComponent<Slider>();
         maxStamina = stamina;
         staminaBar.maxValue = maxStamina;
+        footCollider = GameObject.FindGameObjectWithTag("Ground").GetComponent<Collider2D>();
     }
     void Update()
     {
@@ -34,9 +38,14 @@ public class PlayerRun : MonoBehaviour
         {
             speed = 1;
         }
+        timer += Time.deltaTime;
+        Debug.Log(timer);
+        CheckGoundSound();
         speed = PlayerSprint(speed);
 
         animator.SetFloat("Speed", speed);
+
+        
     }
 
     private void FixedUpdate()
@@ -73,7 +82,7 @@ public class PlayerRun : MonoBehaviour
             movement_speed = DEFAULT_MOVEMENT;
             IncreaseStamina(); //Si on ne sprint pas et que la stamina n'est pas au maximum, on augmente la stamina
         }
-
+            
         staminaBar.value = stamina;
         return speed;
     }
@@ -94,5 +103,50 @@ public class PlayerRun : MonoBehaviour
     private void IncreaseStamina()
     {
         stamina += sValue * Time.deltaTime;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision == footCollider)
+            nameGround = "concrete";
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision == footCollider) 
+            nameGround = "grass";
+    }
+    private void CheckGoundSound()
+    {
+        if (movement.x != 0 || movement.y != 0)
+        {
+            if (nameGround == "grass")
+            {
+                if (timer > 0.5)
+                {
+                    footStepGrass.pitch = Random.Range(0.8f, 1.2f);
+                    footStepGrass.Play();
+                    timer = 0;
+                }
+                    
+                footStepConcrete.Stop();
+            }
+            else if (nameGround == "concrete")
+            {
+                if (timer > 0.5)
+                {
+                    footStepConcrete.pitch = Random.Range(0.8f, 1.2f);
+                    footStepConcrete.Play();
+                    timer = 0;
+                }
+                footStepGrass.Stop();
+            }
+        }
+        else
+        {
+            footStepGrass.Stop();
+            footStepConcrete.Stop();
+        }
+
+
     }
 }
