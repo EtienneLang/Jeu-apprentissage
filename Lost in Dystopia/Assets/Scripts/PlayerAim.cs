@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class PlayerAim : MonoBehaviour
 {
@@ -21,7 +22,7 @@ public class PlayerAim : MonoBehaviour
     public int maxAmmo;
     private float reloadTime;
     private bool isReloading;
-
+    private BulletCountUI TxtBullet;
     private float movement_speed = 1f;
     public Rigidbody2D rb;
 
@@ -36,6 +37,7 @@ public class PlayerAim : MonoBehaviour
         Debug.Log("playerLoad");
         firingMode = Input.GetMouseButtonDown(0);
         player = GameObject.Find("Player");
+        TxtBullet = GameObject.FindGameObjectWithTag("BulletUI").GetComponent<BulletCountUI>();
         aimTransform = null;
         aimAnimator = null;
         aimGunEndPointTransform = null;
@@ -58,6 +60,8 @@ public class PlayerAim : MonoBehaviour
     {
         if (isReloading)
             return;
+        if (nbAmmo == maxAmmo)
+            return;        
         isReloading = true;
         StartCoroutine(ReloadCoroutine());
     }
@@ -66,6 +70,7 @@ public class PlayerAim : MonoBehaviour
     {
         yield return new WaitForSeconds(reloadTime);
         nbAmmo = maxAmmo;
+        TxtBullet.UpdateNbAmmo(nbAmmo);
         isReloading = false;
     }
 
@@ -102,6 +107,7 @@ public class PlayerAim : MonoBehaviour
             if (EventSystem.current.IsPointerOverGameObject()) //Pour ne pas tirer quand curseur sur UI
                 return;
             nbAmmo--;
+            TxtBullet.UpdateNbAmmo(nbAmmo);
             canFire = false;
             gunSound.pitch = UnityEngine.Random.Range(1.5f, 2.2f);
             gunSound.Play();
@@ -172,6 +178,7 @@ public class PlayerAim : MonoBehaviour
             timeBetweenFiring = 100000000000;
             maxAmmo = 0;
             nbAmmo = maxAmmo;
+            TxtBullet.ChangeGun(maxAmmo);
             Debug.Log("CHangé a Rien");
         }
         else if (gun == "AK")
@@ -183,6 +190,7 @@ public class PlayerAim : MonoBehaviour
             timeBetweenFiring = 0.1f;
             maxAmmo = 40;
             nbAmmo = maxAmmo;
+            TxtBullet.ChangeGun(maxAmmo);
             reloadTime = 3f;
             Debug.Log("CHangé a AK");
         }
@@ -195,6 +203,7 @@ public class PlayerAim : MonoBehaviour
             timeBetweenFiring = 0.5f;
             maxAmmo = 15;
             nbAmmo = maxAmmo;
+            TxtBullet.ChangeGun(maxAmmo);
             reloadTime = 2f;
             Debug.Log("CHangé a Glock");
         }
