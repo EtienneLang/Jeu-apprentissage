@@ -204,5 +204,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nom: med_item
   prefab: {fileID: 2196391516951872482}
-  id: 4
+  id: 0
   parentSlot: 0

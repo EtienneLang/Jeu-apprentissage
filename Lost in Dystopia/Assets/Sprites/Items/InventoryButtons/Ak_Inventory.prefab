@@ -177,34 +177,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5f854eccbcf2e14baa7e6ec669cda7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  contact:
-    useTriggers: 0
-    useLayerMask: 0
-    useDepth: 0
-    useOutsideDepth: 0
-    useNormalAngle: 0
-    useOutsideNormalAngle: 0
-    layerMask:
-      serializedVersion: 2
-      m_Bits: 0
-    minDepth: 0
-    maxDepth: 0
-    minNormalAngle: 0
-    maxNormalAngle: 0
-  contactCircle:
-    useTriggers: 0
-    useLayerMask: 0
-    useDepth: 0
-    useOutsideDepth: 0
-    useNormalAngle: 0
-    useOutsideNormalAngle: 0
-    layerMask:
-      serializedVersion: 2
-      m_Bits: 0
-    minDepth: 0
-    maxDepth: 0
-    minNormalAngle: 0
-    maxNormalAngle: 0
   nom: Ak_Item
   prefab: {fileID: 452338871397030161, guid: 70d17a2c37fd0214aa38a6c5a27b1f63, type: 3}
-  id: 101
+  id: 2
+  parentSlot: 0

@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class ShopManagerScript : MonoBehaviour
 {
 
-    public int[,] shopItems = new int[3,5];
+    public int[,] shopItems = new int[3,10];
     public GameObject[] itemsPrefabs = new GameObject[5];
     public Text coinsTxt;
     public GameObject player;
@@ -27,6 +27,9 @@ public class ShopManagerScript : MonoBehaviour
         shopItems[0,2] = 3; //AK
         shopItems[0,3] = 4; //Pils
         shopItems[0,4] = 5; //Glock
+        shopItems[0,5] = 6; //Cig
+        shopItems[0,6] = 7; //Money
+        shopItems[0,7] = 8; //Crystal
 
         //Prices
         shopItems[1,0] = 10;
@@ -71,15 +74,24 @@ public class ShopManagerScript : MonoBehaviour
         GameObject buttonRef = GameObject.FindGameObjectWithTag("Event").GetComponent<EventSystem>().currentSelectedGameObject;
         playerCoins += shopItems[2, buttonRef.GetComponent<ButtonInfo>().ItemID];
         coinsTxt.text = playerCoins.ToString();
-        int i = 0;
-        bool found = false;
-        while (i < inventory.items.Count || !false)
+        bool trouve = false;
+        for (int j = 0; j < inventory.slots.Length; j++)
         {
-            if (inventory.items[i].id == buttonRef.GetComponent<ButtonInfo>().ItemID)
+            if (inventory.slots[j].transform.childCount > 0)
             {
-                playerCoins += shopItems[2, buttonRef.GetComponent<ButtonInfo>().ItemID];
-                inventory.items.Remove(inventory.items[i]);
-            } 
+                Debug.Log(inventory.slots[j].transform.GetChild(0).GetComponent<Item>().id);
+                Debug.Log(buttonRef.GetComponent<ButtonInfo>().ItemID);
+
+                if (inventory.slots[j].transform.GetChild(0).GetComponent<Item>().id == buttonRef.GetComponent<ButtonInfo>().ItemID && !trouve)
+                {
+                    inventory.isFull[j] = false;
+                    Destroy(inventory.slots[j].transform.GetChild(0).gameObject);
+                    Destroy(buttonRef.transform.parent.gameObject);
+                    //On dois supprimer l'item de la liste d'item (A faire)
+                    //inventory.items.Remove(buttonRef.transform.parent.gameObject);
+                    trouve = true;
+                }
+            }   
         }
     }
 }

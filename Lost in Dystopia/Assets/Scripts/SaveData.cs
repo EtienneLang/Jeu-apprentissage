@@ -48,28 +48,28 @@ public class SaveData : MonoBehaviour
                 //On peux optimiser cette fonction en mettant l'item dans la prefabs_item_list
                 //à la même position que son id, du genre : 
                 //Instantiate(prefabs_item_List[id_item], inventaire.slots[index_slot].transform, false);
-                case 1:
+                case 0:
                     Instantiate(prefabs_item_List[2], inventaire.slots[index_slot].transform, false);
                     break;
-                case 2:
+                case 1:
                     Instantiate(prefabs_item_List[3], inventaire.slots[index_slot].transform, false);
                     break;
-                case 3:
+                case 2:
                     Instantiate(prefabs_item_List[4], inventaire.slots[index_slot].transform, false);
                     break;
-                case 4:
+                case 3:
                     Instantiate(prefabs_item_List[5], inventaire.slots[index_slot].transform, false);
                     break;
-                case 5:
+                case 4:
                     Instantiate(prefabs_item_List[6], inventaire.slots[index_slot].transform, false);
                     break;
-                case 6:
+                case 5:
                     Instantiate(prefabs_item_List[7], inventaire.slots[index_slot].transform, false);
                     break;
-                case 101:
+                case 6:
                     Instantiate(prefabs_item_List[0], inventaire.slots[index_slot].transform, false);
                     break;
-                case 102:
+                case 7:
                     Instantiate(prefabs_item_List[1], inventaire.slots[index_slot].transform, false);
                     break;
                 default:

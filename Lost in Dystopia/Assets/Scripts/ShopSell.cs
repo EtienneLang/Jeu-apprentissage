@@ -22,12 +22,20 @@ public class ShopSell : MonoBehaviour
     }
     public void RefreshSellScroller()
     {
-        foreach (Item item in inventaire.items) 
+        foreach (Transform child in itemListScoller.transform)
         {
-            if (item.nom == "med_item") 
+            Destroy(child.gameObject);
+        }
+        if (inventaire != null) 
+        {
+            foreach (Item item in inventaire.items)
             {
-                Instantiate(medSellButton,itemListScoller.transform);
+                if (item.nom == "med_item")
+                {
+                    Instantiate(medSellButton, itemListScoller.transform);
+                }
             }
         }
+        
     }
 }

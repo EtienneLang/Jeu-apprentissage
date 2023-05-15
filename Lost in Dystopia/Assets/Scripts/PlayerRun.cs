@@ -39,7 +39,6 @@ public class PlayerRun : MonoBehaviour
             speed = 1;
         }
         timer += Time.deltaTime;
-        Debug.Log(timer);
         CheckGoundSound();
         speed = PlayerSprint(speed);
 
