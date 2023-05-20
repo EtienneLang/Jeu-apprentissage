@@ -27,6 +27,9 @@ public class ButtonInfo : MonoBehaviour
         if(isBuying == true)
             priceTxt.text = ShopManager.shopItems[1, ItemID].ToString();
         else
+        {
+            Debug.Log(ShopManager.shopItems[2, ItemID].ToString());
             priceTxt.text = ShopManager.shopItems[2, ItemID].ToString();
+        }
     }
 }

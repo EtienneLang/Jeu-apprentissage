@@ -177,7 +177,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5f854eccbcf2e14baa7e6ec669cda7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nom: Glock_Item
+  nom: glock_Item
   prefab: {fileID: 452338871397030161, guid: 57cf7c9b813156a41aec3c1e78c392ed, type: 3}
   id: 4
   parentSlot: 0

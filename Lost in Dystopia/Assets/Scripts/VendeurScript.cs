@@ -71,6 +71,7 @@ public class VendeurScript : Interaclable
     }
     public void ClickSell()
     {
+        shopSell.RefreshSellScroller();
         if (!_shopSellAffiche)
         {
             
@@ -86,7 +87,7 @@ public class VendeurScript : Interaclable
             ShopBtnUI.transform.position = new Vector2(Screen.width / 2, Screen.height / 2);
             _shopSellAffiche = false;
         }
-        shopSell.RefreshSellScroller();
+        
         _shopBuyAffiche = false;
     }
     //NE MARCHE PAS JE NE SAIS PAS POURQUOI

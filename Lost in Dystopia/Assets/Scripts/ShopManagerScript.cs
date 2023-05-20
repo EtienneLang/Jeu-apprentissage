@@ -44,6 +44,9 @@ public class ShopManagerScript : MonoBehaviour
         shopItems[2, 2] = 60;
         shopItems[2, 3] = 15;
         shopItems[2, 4] = 40;
+        shopItems[2, 5] = 20;
+        shopItems[2, 6] = 40;
+        shopItems[2, 7] = 70;
     }
 
     // Update is called once per frame

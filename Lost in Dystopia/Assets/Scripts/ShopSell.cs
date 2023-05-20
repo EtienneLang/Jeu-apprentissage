@@ -10,6 +10,13 @@ public class ShopSell : MonoBehaviour
     private VerticalLayoutGroup itemListScoller;
     private Inventory inventaire;
     public GameObject medSellButton;
+    public GameObject CigSellButton;
+    public GameObject CrystalSellButton;
+    public GameObject GlockSellButton;
+    public GameObject AKSellButton;
+    public GameObject PilsSellButton;
+    public GameObject MoneySellButton;
+    public GameObject KeySellButton;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,19 +27,49 @@ public class ShopSell : MonoBehaviour
     {
 //        Debug.Log(inventaire.items.Count);
     }
-    public void RefreshSellScroller()
+    public void RefreshSellScroller() 
     {
-        foreach (Transform child in itemListScoller.transform)
+        Debug.Log(itemListScoller.transform.childCount);
+        if (itemListScoller.transform.childCount != 0)
         {
-            Destroy(child.gameObject);
+            foreach (Transform child in itemListScoller.transform)
+            {
+                Destroy(child.gameObject);
+            }
         }
+        
         if (inventaire != null) 
         {
             foreach (Item item in inventaire.items)
             {
-                if (item.nom == "med_item")
+                switch (item.nom)
                 {
-                    Instantiate(medSellButton, itemListScoller.transform);
+                    case "med_item":
+                        Instantiate(medSellButton, itemListScoller.transform);
+                        break;
+                    case "cig_item":
+                        Instantiate(CigSellButton, itemListScoller.transform);
+                        break;
+                    case "crystal_item":
+                        Instantiate(CrystalSellButton, itemListScoller.transform);
+                        break;
+                    case "glock_item":
+                        Instantiate(GlockSellButton, itemListScoller.transform);
+                        break;
+                    case "Ak_item":
+                        Instantiate(AKSellButton, itemListScoller.transform);
+                        break;
+                    case "pils_item":
+                        Instantiate(PilsSellButton, itemListScoller.transform);
+                        break;
+                    case "money_item":
+                        Instantiate(MoneySellButton, itemListScoller.transform);
+                        break;
+                    case "key_item":
+                        Instantiate(KeySellButton, itemListScoller.transform);
+                        break;
+                    default:
+                        break;
                 }
             }
         }

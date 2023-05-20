@@ -383,8 +383,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ItemID: 0
+  isBuying: 0
   priceTxt: {fileID: 3743639222622268929}
-  ShopManager: {fileID: 0}
 --- !u!1 &3743639222622268931
 GameObject:
   m_ObjectHideFlags: 0
@@ -420,8 +420,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -15, y: -11}
-  m_SizeDelta: {x: 27.308014, y: 36.775}
+  m_AnchoredPosition: {x: -18.935608, y: -11}
+  m_SizeDelta: {x: 35.1792, y: 36.775}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3743639222622268928
 CanvasRenderer:
