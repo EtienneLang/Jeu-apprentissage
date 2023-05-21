@@ -11,16 +11,19 @@ public class VendeurScript : Interaclable
     public GameObject ShopBtnUI;
     public GameObject ShopBuyUI;
     public GameObject ShopSellUI;
+    public GameObject ShopSellPourCurseur;
     public ShopSell shopSell;
 
 
     private void Start()
     {
+        ShopSellPourCurseur = GameObject.FindGameObjectWithTag("MenuShop");
         _shopBtnAffiche = false;
         _shopSellAffiche = false;
         _shopBuyAffiche = false;
         ShopBtnUI.SetActive(false);
         ShopSellUI.SetActive(false);
+        ShopSellPourCurseur.SetActive(false);
     }
     private void Update()
     {
@@ -30,6 +33,7 @@ public class VendeurScript : Interaclable
             {
                 if (!_shopBtnAffiche)
                 {
+                    ShopSellPourCurseur.SetActive(true);
                     ShopBtnUI.SetActive(true);
                     _shopBtnAffiche = true;
                 }
@@ -38,6 +42,7 @@ public class VendeurScript : Interaclable
                     ShopBuyUI.SetActive(false);
                     ShopBtnUI.SetActive(false);
                     ShopSellUI.SetActive(false);
+                    ShopSellPourCurseur.SetActive(false);
                     _shopBtnAffiche = false;
                     ShopBtnUI.transform.position = new Vector2(Screen.width / 2, Screen.height / 2);
                 }
@@ -48,6 +53,7 @@ public class VendeurScript : Interaclable
             ShopBtnUI.SetActive(false);
             ShopBuyUI.SetActive(false);
             ShopSellUI.SetActive(false);
+            ShopSellPourCurseur.SetActive(false);
             ShopBtnUI.transform.position = new Vector2(Screen.width / 2, Screen.height / 2);
         }
 
@@ -87,8 +93,6 @@ public class VendeurScript : Interaclable
             ShopBtnUI.transform.position = new Vector2(Screen.width / 2, Screen.height / 2);
             _shopSellAffiche = false;
         }
-        
-
         _shopBuyAffiche = false;
     }
     //NE MARCHE PAS JE NE SAIS PAS POURQUOI

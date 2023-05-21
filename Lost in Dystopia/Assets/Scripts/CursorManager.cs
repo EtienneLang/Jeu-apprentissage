@@ -11,6 +11,7 @@ public class CursorManager : MonoBehaviour
     [SerializeField] private Texture2D curseurMainFerme;
     [SerializeField] private Texture2D curseurFleche;
     private GameObject menuPause;
+    private GameObject menuShop;
 
     private bool baseActive = true;
     private Vector2 cursorHotspot;
@@ -18,6 +19,7 @@ public class CursorManager : MonoBehaviour
     void Start()
     {
         menuPause = GameObject.FindGameObjectWithTag("MenuPause");
+        menuShop = GameObject.FindGameObjectWithTag("MenuShop");
         cursorHotspot = new Vector2(curseurBase.width / 2, curseurBase.height / 2);
         Cursor.SetCursor(curseurBase, cursorHotspot, CursorMode.Auto);
     }
@@ -27,9 +29,10 @@ public class CursorManager : MonoBehaviour
     {
         if (EventSystem.current.IsPointerOverGameObject()) 
         {
+            menuShop = GameObject.FindGameObjectWithTag("MenuShop");
             menuPause = GameObject.FindGameObjectWithTag("MenuPause");
             baseActive = false;
-            if (SceneManager.GetActiveScene().name == "MenuPrincipal" || menuPause != null)
+            if (SceneManager.GetActiveScene().name == "MenuPrincipal" || menuPause != null || menuShop != null)
             {
                 cursorHotspot = new Vector2(curseurFleche.width / 2, curseurFleche.height / 2);
                 Cursor.SetCursor(curseurFleche, cursorHotspot, CursorMode.Auto);

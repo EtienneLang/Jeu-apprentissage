@@ -19,6 +19,7 @@ TagManager:
   - Ground
   - BulletUI
   - SellItemPanel
+  - MenuShop
   layers:
   - Default
   - TransparentFX
