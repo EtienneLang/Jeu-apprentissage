@@ -23,8 +23,6 @@ public class MapSelector : Interaclable
                GameManager.instance.ShowStillText("Press M to open the map", 25, Color.white, GameManager.instance.player.transform.position);
                 _MsgAffiche = true;
             }
-
-
             if (Input.GetKeyDown(KeyCode.M))
             {
                 if (!_MapAffiche)

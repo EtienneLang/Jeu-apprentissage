@@ -20,6 +20,7 @@ public class VendeurScript : Interaclable
         _shopSellAffiche = false;
         _shopBuyAffiche = false;
         ShopBtnUI.SetActive(false);
+        ShopSellUI.SetActive(false);
     }
     private void Update()
     {
@@ -71,11 +72,10 @@ public class VendeurScript : Interaclable
     }
     public void ClickSell()
     {
-        shopSell.RefreshSellScroller();
         if (!_shopSellAffiche)
         {
-            
             ShopSellUI.SetActive(true);
+            shopSell.RefreshSellScroller();
             ShopBuyUI.SetActive(false);
             ShopBtnUI.transform.position = new Vector2(Screen.width / 2 - 300, Screen.height / 2);
             _shopSellAffiche = true;
@@ -88,6 +88,7 @@ public class VendeurScript : Interaclable
             _shopSellAffiche = false;
         }
         
+
         _shopBuyAffiche = false;
     }
     //NE MARCHE PAS JE NE SAIS PAS POURQUOI

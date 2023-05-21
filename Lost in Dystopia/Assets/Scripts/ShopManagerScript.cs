@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -87,11 +88,13 @@ public class ShopManagerScript : MonoBehaviour
 
                 if (inventory.slots[j].transform.GetChild(0).GetComponent<Item>().id == buttonRef.GetComponent<ButtonInfo>().ItemID && !trouve)
                 {
+
                     inventory.isFull[j] = false;
                     Destroy(inventory.slots[j].transform.GetChild(0).gameObject);
                     Destroy(buttonRef.transform.parent.gameObject);
-                    //On dois supprimer l'item de la liste d'item (A faire)
-                    //inventory.items.Remove(buttonRef.transform.parent.gameObject);
+                    //On dois supprimer l'item de la liste d'item (A faire)à
+                    inventory.items.Remove(inventory.slots[j].transform.GetChild(0).GetComponent<Item>());
+                    //inventory.items.Remove(buttonRef.transform.parent.gameObject.GetComponent<Item>());
                     trouve = true;
                 }
             }   

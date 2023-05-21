@@ -7,7 +7,7 @@ using UnityEngine.UIElements;
 
 public class ShopSell : MonoBehaviour
 {
-    private VerticalLayoutGroup itemListScoller;
+    private GameObject itemListScoller;
     private Inventory inventaire;
     public GameObject medSellButton;
     public GameObject CigSellButton;
@@ -21,7 +21,7 @@ public class ShopSell : MonoBehaviour
     void Start()
     {
         inventaire = GameObject.FindGameObjectWithTag("Inventaire").GetComponent<Inventory>();
-        itemListScoller = GameObject.Find("SellItemPanel").GetComponent<VerticalLayoutGroup>();
+        itemListScoller = GameObject.FindGameObjectWithTag("SellItemPanel");
     }
     private void Update()
     {
@@ -29,6 +29,7 @@ public class ShopSell : MonoBehaviour
     }
     public void RefreshSellScroller() 
     {
+        itemListScoller = GameObject.FindGameObjectWithTag("SellItemPanel");
         Debug.Log(itemListScoller.transform.childCount);
         if (itemListScoller.transform.childCount != 0)
         {
@@ -37,7 +38,6 @@ public class ShopSell : MonoBehaviour
                 Destroy(child.gameObject);
             }
         }
-        
         if (inventaire != null) 
         {
             foreach (Item item in inventaire.items)
@@ -73,6 +73,5 @@ public class ShopSell : MonoBehaviour
                 }
             }
         }
-        
     }
 }

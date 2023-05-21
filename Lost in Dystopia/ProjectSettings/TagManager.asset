@@ -17,6 +17,8 @@ TagManager:
   - MenuPause
   - ShopManager
   - Ground
+  - BulletUI
+  - SellItemPanel
   layers:
   - Default
   - TransparentFX
