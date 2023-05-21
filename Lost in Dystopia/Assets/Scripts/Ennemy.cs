@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class Ennemy : Fighter
 {
-    private const int MAX_HEALTH = 20;
+    public int MAX_HEALTH;
     private int goldCoins;
     private float timer = 0f;
 

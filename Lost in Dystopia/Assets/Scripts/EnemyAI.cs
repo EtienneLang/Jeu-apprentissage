@@ -21,7 +21,7 @@ public class EnemyAI : MonoBehaviour
     private GameObject player;
     public Transform enemyGFX;
     public Patrol patrol;
-    public const float DISTANCE_REPERAGE = 4f;
+    public float DISTANCE_REPERAGE;
 
     // Start is called before the first frame update
     void Start()
@@ -50,7 +50,7 @@ public class EnemyAI : MonoBehaviour
     void FixedUpdate()
     {
         float distance = Vector3.Distance(player.transform.position, _rb.transform.position);
-        if (distance < 2f)
+        if (distance < DISTANCE_REPERAGE)
         {
             _target = player.transform;
             _targetIsSeen = true;

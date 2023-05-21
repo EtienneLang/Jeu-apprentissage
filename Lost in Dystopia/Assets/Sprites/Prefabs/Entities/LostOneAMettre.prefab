@@ -192,12 +192,24 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7161443583957330724, guid: 879c0e1fb2c3c4d43ba0a3a8dfc72941, type: 3}
+      propertyPath: health
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7161443583957330724, guid: 879c0e1fb2c3c4d43ba0a3a8dfc72941, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7161443583957330724, guid: 879c0e1fb2c3c4d43ba0a3a8dfc72941, type: 3}
+      propertyPath: MAX_HEALTH
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 7161443583957330726, guid: 879c0e1fb2c3c4d43ba0a3a8dfc72941, type: 3}
       propertyPath: _target
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7161443583957330726, guid: 879c0e1fb2c3c4d43ba0a3a8dfc72941, type: 3}
+      propertyPath: DISTANCE_REPERAGE
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7161443583957330730, guid: 879c0e1fb2c3c4d43ba0a3a8dfc72941, type: 3}
       propertyPath: m_RootOrder

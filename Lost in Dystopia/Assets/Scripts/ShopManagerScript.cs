@@ -92,9 +92,7 @@ public class ShopManagerScript : MonoBehaviour
                     inventory.isFull[j] = false;
                     Destroy(inventory.slots[j].transform.GetChild(0).gameObject);
                     Destroy(buttonRef.transform.parent.gameObject);
-                    //On dois supprimer l'item de la liste d'item (A faire)à
                     inventory.items.Remove(inventory.slots[j].transform.GetChild(0).GetComponent<Item>());
-                    //inventory.items.Remove(buttonRef.transform.parent.gameObject.GetComponent<Item>());
                     trouve = true;
                 }
             }   
