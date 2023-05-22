@@ -11,6 +11,7 @@ public class Pickup : MonoBehaviour
     {
         inventory = GameObject.FindGameObjectWithTag("Inventaire").GetComponent<Inventory>();
         sonRamasse = GetComponentInParent<AudioSource>();
+        sonRamasse.volume = PlayerPrefs.GetFloat("SoundVolume");
     }
 
     void OnTriggerEnter2D(Collider2D collision)

@@ -9,6 +9,9 @@ public class SonsAmbiants : MonoBehaviour
     void Start()
     {
         //Start the coroutine we define below named ExampleCoroutine.
+        float volume = PlayerPrefs.GetFloat("SoundVolume");
+        chien.volume = volume;
+        oiseaux.volume = volume;
         StartCoroutine(ExampleCoroutine());
     }
 

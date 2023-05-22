@@ -22,6 +22,8 @@ public class Ennemy : Fighter
         health = maxHealth;
         HealtBar.SetMaxHealth(maxHealth);
         goldCoins = Random.Range(1,10);
+        float volume = PlayerPrefs.GetFloat("SoundVolume");
+        attackSound.volume = volume;
     }
     private void Update()
     {

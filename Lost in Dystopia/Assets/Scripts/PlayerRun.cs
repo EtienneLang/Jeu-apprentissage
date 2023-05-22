@@ -28,6 +28,9 @@ public class PlayerRun : MonoBehaviour
         maxStamina = stamina;
         staminaBar.maxValue = maxStamina;
         footCollider = GameObject.FindGameObjectWithTag("Ground").GetComponent<Collider2D>();
+        float volume = PlayerPrefs.GetFloat("SoundVolume");
+        footStepGrass.volume = volume;
+        footStepConcrete.volume = volume;
     }
     void Update()
     {
