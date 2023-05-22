@@ -2,11 +2,13 @@ using Assets.Scripts;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : Fighter 
 {
     private const int MAX_HEALTH = 25;
     public int goldCoins = 0;
+    public Inventory inventaire;
 
     public int GoldCoins { get { return goldCoins; } set {goldCoins=value;} }
     private void Start()
@@ -15,6 +17,7 @@ public class Player : Fighter
         health = maxHealth;
         HealtBar = GameObject.FindGameObjectWithTag("HealthBar").GetComponent<HealtBar>();
         HealtBar.SetMaxHealth(maxHealth);
+        inventaire = GameObject.FindGameObjectWithTag("Inventaire").GetComponent<Inventory>();
     }
     public void Heal()
     {
@@ -30,5 +33,17 @@ public class Player : Fighter
         }
         HealtBar.SetHealt(health);
     }
-    
+
+
+    protected override void Death()
+    {
+        foreach (GameObject slot in inventaire.slots)
+        {
+            foreach (Transform child in slot.transform)
+                Destroy(child.gameObject);
+        }
+        inventaire.items.Clear();
+        SceneManager.LoadScene(2);
+    }
+
 }
